@@ -1,0 +1,771 @@
+<!DOCTYPE html><!-- Last Published: Thu Feb 01 2024 12:46:57 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="musemind.agency" data-wf-page="652bce9fb62af154c451edc0" data-wf-site="643f7373d3f6653157617339" lang="en">
+<!-- Mirrored from musemind.agency/ui-ux-process by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Feb 2024 05:39:09 GMT -->
+<head><meta charset="utf-8"/><title>UI/UX Design Process | Musemind</title><meta content="Discover our seamless UI/UX design process that ensures user satisfaction and enhances digital experiences." name="description"/><meta content="UI/UX Design Process | Musemind" property="og:title"/><meta content="Discover our seamless UI/UX design process that ensures user satisfaction and enhances digital experiences." property="og:description"/><meta content="https://assets-global.website-files.com/643f7373d3f6653157617339/652cf7c979b85b71920f5d33_musemind-ui-ux-process.webp" property="og:image"/><meta content="UI/UX Design Process | Musemind" property="twitter:title"/><meta content="Discover our seamless UI/UX design process that ensures user satisfaction and enhances digital experiences." property="twitter:description"/><meta content="https://assets-global.website-files.com/643f7373d3f6653157617339/652cf7c979b85b71920f5d33_musemind-ui-ux-process.webp" property="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="../assets-global.website-files.com/643f7373d3f6653157617339/css/muse-mind.2e64986fe.min.css" rel="stylesheet" type="text/css"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="../assets-global.website-files.com/643f7373d3f6653157617339/6506ea199ef869fb79a2318a_musemind.jpg" rel="shortcut icon" type="image/x-icon"/><link href="../assets-global.website-files.com/643f7373d3f6653157617339/6506ea022a4b20c9d19afc44_musemind.jpg" rel="apple-touch-icon"/><link href="ui-ux-process.html" rel="canonical"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FB5BVX551Q"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-FB5BVX551Q');</script>
+<style>
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(125deg, #000 0%, #000 100%);
+        border-radius: 10px
+    }
+
+    /* Snippet prevents all click and hover interaction with an element */
+    .clickable-off {
+        pointer-events: none;
+    }
+
+    /* Snippet enables all click and hover interaction with an element */
+    .clickable-on {
+        pointer-events: auto;
+    }
+
+    .cursor-off {
+        cursor: none;
+    }
+
+    .dropdown-toggle {
+        transition: all 300ms ease;
+    }
+
+    .dropdown-toggle.w--open .mobiel-menu-icon-wrap {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-toggle.w--open {
+        background-size: 100% 100%;
+    }
+
+    .mobile-nav-link:hover {
+        background-size: 100% 100%;
+    }
+
+    .dropdown-toggle {
+        display: inline-flex;
+    }
+
+    .dropdown-toggle,
+    .mobile-nav-link {
+        background-image: linear-gradient(transparent calc(100% - 2px), #FFEB00 2px);
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position: left;
+        -webkit-transition: all 500ms ease-in-out;
+    }
+</style><style>
+    .text-line-highlight::before {
+        content: '';
+        background: #FFFF00;
+        width: 100%;
+        height: 14px;
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+    }
+
+    .faq-item.open .faq-arrow-wrap {
+        transform: rotate(180deg);
+    }
+
+    .faq-item.open .faq-answer {
+        max-height: 800px;
+    }
+
+    .faq-item .faq-answer {
+        transition: opacity .5s ease-out, max-height .8s cubic-bezier(.165, .84, .44, 1);
+    }
+</style></head><body><div class="tag-manger w-embed"></div><div class="w-embed"><style>
+  /*SIdebar Navigation Css Start*/
+
+  .main-menu__nav-link:hover .menu__nav-txt-wrap {
+    top: 50px;
+  }
+
+  .main-menu__nav-link:hover {
+    color: #7D7D82;
+  }
+
+  .menu__nav-item .main-menu__nav-link:hover {
+    background-size: 100% 100%;
+  }
+
+  .main-menu__nav-link {
+    display: inline;
+    background-image: linear-gradient(transparent calc(100% - 2px), #fff 2px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position: right;
+    -webkit-transition: all 500ms ease-in-out;
+  }
+
+  .main-menu__nav-link:hover .sidebar-menu-bottom-border {
+    width: 100%;
+  }
+
+  .menu__nav-link:hover .menu__nav-txt-wrap {
+    top: 50px;
+  }
+
+  /*Sidebar Navigation CSS End*/
+
+  .marquee-track {
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 25s linear infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  [data-anim="roundtxt"] {
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+  }
+
+  @keyframes spin {
+    100% {
+      -moz-transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+
+
+  /* Snippet prevents all click and hover interaction with an element */
+  .clickable-off {
+    pointer-events: none;
+  }
+
+  /* Snippet enables all click and hover interaction with an element */
+  .clickable-on {
+    pointer-events: auto;
+  }
+
+  .cursor-off {
+    cursor: none;
+  }
+
+  .banner-clutch-item .widgets_wrapper {
+    background-color: #fff;
+    display: inline-block;
+  }
+
+  .case-studies-thumbnail-block {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .case-studies-single-item:hover .case-studies-thumbnail-block {
+    clip-path: polygon(5% 10%, 100% 2%, 100% 98%, 5% 98%);
+  }
+
+  .case-studies-single-item:hover .case-studies-thumbnail-block .case-studies-quick {
+    transform: translateY(-100%);
+  }
+
+  .case-studies-single-item:hover .case-studies-quick-block {
+    bottom: 40px;
+  }
+
+  .award-single-item,
+  .counter-single-item {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .award-single-item:hover,
+  .counter-single-item:hover {
+    clip-path: polygon(5% 5%, 95% 2%, 95% 95%, 5% 98%);
+  }
+
+  .we-do-item.open .we-do-title {
+    color: white;
+  }
+
+  .we-do-item {
+    transition: all 200ms;
+  }
+
+  .we-do-question:hover .we-do-title {
+    color: white;
+  }
+
+  .we-do-question:hover .we-do-item {
+    border-color: white;
+  }
+
+  .we-do-question:hover .we-do-arrow-wrap {
+    background-color: #fff300;
+  }
+
+  .we-do-question:hover .we-do-arrow-wrap svg path {
+    fill: black
+  }
+
+  .we-do-item.open {
+    border-color: white;
+  }
+
+  .we-do-item.open .we-do-arrow-wrap {
+    background-color: #fff300;
+    transform: rotate(180deg);
+  }
+
+  .we-do-item.open .we-do-arrow-wrap svg path {
+    fill: black
+  }
+
+
+  .blog-single-item .blog-content .blog-title a {
+    display: inline;
+    width: calc(100%);
+    background-image: linear-gradient(transparent calc(100% - 2px), #101010 2px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+  }
+
+  .blog-single-item .blog-content .blog-title:hover a {
+    background-size: 100% 100%;
+  }
+
+  .blog-single-item .blog-content .featured-blog-title a {
+    display: inline;
+    width: calc(100%);
+    background-image: linear-gradient(transparent calc(100% - 2px), #fff 2px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+  }
+
+  .blog-single-item .blog-content .featured-blog-title:hover a {
+    background-size: 100% 100%;
+  }
+
+  .faq-item.open .faq-arrow-wrap {
+    background-color: #000;
+    transform: rotate(180deg);
+  }
+
+  .faq-item.open .faq-arrow-wrap svg path {
+    fill: white
+  }
+
+  @media only screen and (max-width: 1124px) and (min-width: 992px) {
+    .section-padding {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+
+    .banner-title {
+      font-size: 95px;
+    }
+
+    .clutch-widget {
+      display: none;
+    }
+    .banner-content{
+      padding-left: 0;
+    }
+    .section-padding-top {
+      padding-top: 140px;
+    }
+
+    .section-padding-bottom {
+      padding-bottom: 140px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      padding: 5px 6px;
+    }
+
+    .w-nav-brand {
+      width: 120px;
+    }
+
+    .button-color-2,
+    .button-text {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    h1 {
+      font-size: 105px;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    .paragraph-regular {
+      font-size: 22px;
+      line-height: 130%;
+    }
+
+    .fz-120 {
+      font-size: 90px;
+    }
+
+    .fz-96 {
+      font-size: 80px;
+    }
+
+    .fz-72 {
+      font-size: 52px;
+      line-height: 62PX;
+    }
+
+    .fz-64 {
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    .fz-48 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    .fz-36 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    .fz-30 {
+      font-size: 26px;
+      line-height: 34px;
+    }
+
+    .mb-140 {
+      margin-bottom: 100px;
+    }
+
+    .menu__col.mod--center-1 {
+      left: 5vw;
+    }
+
+    .main-menu__nav-link {
+      font-size: 24px;
+    }
+
+    .main-menu__img {
+      max-width: 400px;
+    }
+
+    .section-padding {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+
+    .section-padding-top {
+      padding-top: 140px;
+    }
+
+    .section-padding-bottom {
+      padding-bottom: 140px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      padding: 5px 6px;
+    }
+
+    .w-nav-brand {
+      width: 120px;
+    }
+
+    .button-color-2,
+    .button-text {
+      font-size: 14px;
+    }
+
+    .menu-roundtxt {
+      width: 140px;
+      height: 140px;
+    }
+
+    .cursor-area {
+      width: 180px;
+      height: 180px;
+    }
+
+    .video-play-icon {
+      width: 25px;
+    }
+
+    .counter-animated-title {
+      font-size: 136px;
+    }
+
+    .count-title {
+      font-size: 16px;
+    }
+
+    .counter-wrap {
+      grid-column-gap: 16px;
+    }
+
+    .testimonial-header-content {
+      grid-column-gap: 44px;
+    }
+
+    .quote-content.big {
+      font-size: 28px;
+    }
+
+    .quote-content {
+      font-size: 24px;
+    }
+
+    .grid-item.ux-grid {
+      grid-column-gap: 70px;
+    }
+
+
+    .testimonial-feed-number,
+    .testimonial-feed-prefix {
+      font-size: 42px;
+      line-height: 52px;
+    }
+
+    .connect-webflow-profile {
+      padding: 130px 8.073vw;
+    }
+
+    .testimonial-slider-quote {
+      margin-bottom: 24px;
+    }
+
+    .testimonial-quote-image-wrap img {
+      width: 30px;
+    }
+
+    .testimonial-footer-content {
+      padding-top: 10px;
+    }
+
+
+    .blog-collection-list {
+      grid-column-gap: 30px;
+    }
+
+    .blog-content {
+      padding: 25px 25px 36px;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .banner-title {
+      font-size: 62px;
+      line-height: 70px;
+    }
+
+    .section-title.smaill {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    .fz-120 {
+      font-size: 42px;
+      line-height: 52px;
+    }
+
+    .fz-72 {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    .quote-content.full {
+      font-size: 20px;
+    }
+
+    .industry-single-item.swiper-slide {
+      height: 240px;
+    }
+  }
+  
+   @media screen and (max-width: 370px) {
+    .section-title.smaill {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+  }
+</style></div><section id="navi" class="navbar-logo-left"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-left-container w-nav"><div class="container-large overflow-visible"><div class="navbar-wrapper"><a href="index.html" class="navbar-brand w-nav-brand"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64e5dc553c8feabe9c2839ec_logo black.svg" loading="lazy" alt="" class="logo-iimage"/></a><nav role="navigation" class="nav-menu-wrapper w-nav-menu"><div data-w-id="893361cb-40f9-cce0-6d1c-57908640824b" class="btn-wrapper"><a href="#" class="primary-button blank w-inline-block"><div class="button-content"><div data-w-id="893361cb-40f9-cce0-6d1c-57908640824e" class="button-text">Services</div><div class="button-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/644df3d379e6c4617d2e7057_menu icon.svg" loading="lazy" width="10" alt=""/></div></div></a></div><ul role="list" class="nav-menu-two w-list-unstyled"><li class="menu-list-item mobile-block"><div data-hover="false" data-delay="0" class="menu-service-dropdown w-dropdown"><div class="service-list-dropdown-toggle w-dropdown-toggle"><div class="service-menu-title">Expertise</div><div class="link-list-dropdown-icon w-icon-dropdown-toggle"></div></div><nav class="menu-dropdown-list w-dropdown-list"><a href="services/ui-ux-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">UI/UX Design</a><a href="services/web-design-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">Web Design</a><a href="services/mobile-app-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">Mobile App</a><a href="services/saas-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">SaaS Design</a><a href="services/mvp-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">MVP Build</a><a href="services/design-system.html" class="border-bottom dropdown-link-2 w-dropdown-link">Design System</a><a href="services/webflow-design-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">Webflow development</a><a href="services/brand-identity-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">Branding Service </a></nav></div></li><li class="menu-list-item"><a href="about-us.html" class="nav-link">About us</a></li><li class="menu-list-item"><a href="case-study.html" class="nav-link">Work</a></li><li class="menu-list-item"><a href="ui-ux-process.html" aria-current="page" class="nav-link w--current">Our Process</a></li><li class="menu-list-item"><a href="career.html" class="nav-link">Career</a></li><li class="menu-list-item"><a href="blog.html" class="nav-link">Blog</a></li><li class="menu-list-item mobile-block"><a href="contact.html" class="nav-link">Contact</a></li></ul></nav><div class="nav-right-content"><div class="btn-wrapper"><div data-w-id="28c226d6-b28c-6d7d-11a9-2b65d12c0944" class="button-hover-wrap"><div class="button-icon-2 left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="contact.html" class="primary-button main-bg-color w-inline-block"><div class="button-content"><div class="button-color-2">Contact us</div></div></a><div class="button-icon-2 right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div><div class="menu-button w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div><div data-collapse="all" data-animation="default" data-duration="0" data-easing="ease" data-easing2="ease" role="banner" class="mobile-menu-nav w-nav"><div class="container"><div class="mobile-main-menu-inner"><a href="index.html" class="menu-logo-wrapper w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64e5dc553c8feabe9c2839ec_logo black.svg" loading="lazy" alt=""/></a><div data-w-id="91f365b1-47e0-bd8a-ac30-3b456c408ed5" class="mobile-nav-toggle-btn"><div class="menu-line-block"><div class="menu-line"></div><div class="menu-line two"></div></div><div class="mobile-menu-text">Menu</div></div></div></div></div><div class="mobile-popup-menu"><div class="container"><div class="mobile-nav-inner"><a href="index.html" class="mobile-menu-logo-wrapper w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64edcc3e7c2a913505d4928d_logo.svg" loading="lazy" alt=""/></a><div data-w-id="df49dfe7-f9ef-cc86-b3f6-625eb7116310" class="mobile-nav-toggle-close-btn"><div class="mobile-menu-text">Close</div></div></div><div class="mobile-menu-content"><div class="mobile-menu-column"><div class="mobile-menu-item"><div data-hover="false" data-delay="0" class="menu-service-dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="service-menu-title-2">Services</div><div class="mobiel-menu-icon-wrap main-bg-color"><div class="read-more-embed d-flex w-embed"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z" fill="black"/>
+</svg></div></div></div><nav class="menu-dropdown-list w-dropdown-list"><a href="services/ui-ux-design.html" class="dropdown-link w-dropdown-link">UI/UX Design</a><a href="services/web-design-development.html" class="dropdown-link w-dropdown-link">Web Design</a><a href="services/mobile-app-design.html" class="dropdown-link w-dropdown-link">Mobile App</a><a href="services/saas-design.html" class="dropdown-link w-dropdown-link">SaaS Design</a><a href="services/design-system.html" class="dropdown-link w-dropdown-link">Design System</a><a href="services/mvp-development.html" class="dropdown-link w-dropdown-link">MVP Service</a><a href="services/webflow-design-development.html" class="dropdown-link w-dropdown-link">Webflow development</a><a href="services/brand-identity-design.html" class="dropdown-link w-dropdown-link">Branding Service </a></nav></div></div><div class="mobile-menu-item"><a href="about-us.html" class="mobile-nav-link">About us</a></div><div class="mobile-menu-item"><a href="ui-ux-process.html" aria-current="page" class="mobile-nav-link w--current">Our Process</a></div><div class="mobile-menu-item"><a href="case-study.html" class="mobile-nav-link">Work</a></div><div class="mobile-menu-item"><a href="career.html" class="mobile-nav-link">Career</a></div><div class="mobile-menu-item mb-65"><a href="blog.html" class="mobile-nav-link">Blog</a></div><div data-w-id="15cfa915-b069-c723-c2d6-2174aab7050a" class="btn-wrapper"><div class="button-hover-wrap"><div class="button-icon-2 left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="contact.html" class="primary-button main-bg-color w-inline-block"><div class="button-content"><div class="button-color-2">Contact us</div></div></a><div class="button-icon-2 right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div></div><div class="mobile-menu-bg-block"></div></div></div><div class="w-embed"><style>
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee_item {
+  animation: scroll 10s linear infinite;
+}
+
+.marquee_wrapper:hover > .marquee_item  {
+    animation-play-state: paused;
+    
+</style></div></section><div class="sidebar-wrapper"><div data-w-id="ef2b99f7-2973-4a19-6a45-b5f6283ebe6b" class="sidebar-menu-bg"></div><div class="sidebar-menu-content bg-black"><div class="container-large"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-left-container w-nav"><div class="navbar-wrapper"><a href="index.html" class="navbar-brand w-nav-brand"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64e5dc5447faa4654295c505_Logo whit.svg" loading="lazy" alt="" class="logo-iimage"/></a><nav role="navigation" class="nav-menu-wrapper w-nav-menu"><div data-w-id="f9c2d5de-d840-add1-edf8-77004f87d3ca" class="btn-wrapper"><a href="#" class="primary-button blank w-inline-block"><div class="button-content"><div class="button-text color-white">Services</div><div class="button-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64eeb4fc5592ad025b7eb85d_short_up.svg" loading="lazy" width="12" alt=""/></div></div></a></div><ul role="list" class="nav-menu-two w-list-unstyled"><li class="menu-list-item mobile-block"><div data-hover="false" data-delay="0" class="menu-service-dropdown w-dropdown"><div class="service-list-dropdown-toggle w-dropdown-toggle"><div class="service-menu-title">Expertise</div><div class="link-list-dropdown-icon w-icon-dropdown-toggle"></div></div><nav class="menu-dropdown-list w-dropdown-list"><a href="services/ui-ux-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">UI/UX Design</a><a href="services/web-design-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">Web Design</a><a href="services/mobile-app-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">Mobile App</a><a href="services/saas-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">SaaS Design</a><a href="services/mvp-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">MVP Build</a><a href="services/design-system.html" class="border-bottom dropdown-link-2 w-dropdown-link">Design System</a><a href="services/webflow-design-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">Webflow development</a><a href="services/brand-identity-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">Branding Service </a></nav></div></li><li class="menu-list-item"><a href="about-us.html" class="nav-link white-nav">About us</a></li><li class="menu-list-item"><a href="case-study.html" class="nav-link white-nav">Work</a></li><li class="menu-list-item"><a href="ui-ux-process.html" aria-current="page" class="nav-link white-nav w--current">Our Process</a></li><li class="menu-list-item"><a href="career.html" class="nav-link white-nav">Career</a></li><li class="menu-list-item"><a href="blog.html" class="nav-link white-nav">Blog</a></li><li class="menu-list-item mobile-block"><a href="#" class="nav-link">Contact</a></li></ul></nav><div class="nav-right-content"><div data-w-id="f9c2d5de-d840-add1-edf8-77004f87d3d1" class="btn-wrapper"><div data-w-id="f9c2d5de-d840-add1-edf8-77004f87d3d2" class="button-hover-wrap"><div class="button-icon-2 left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="contact.html" class="primary-button main-bg-color w-inline-block"><div class="button-content"><div class="button-color-2">Contact us</div></div></a><div class="button-icon-2 right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div><div class="menu-button w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div><div class="menu__columns"><div class="menu__col"><div class="menu__nav-item main-menu"><a href="services/ui-ux-design.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">UI/UX Design</div><div class="menu__nav-txt">UI/UX Design</div></div></a></div><div class="menu__nav-item main-menu"><a href="services/web-design-development.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">Web Design</div><div class="menu__nav-txt">Web Design</div></div></a></div><div class="menu__nav-item main-menu"><a href="services/brand-identity-design.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">Branding</div><div class="menu__nav-txt">Branding</div></div></a></div><div class="menu__nav-item main-menu"><a href="services/webflow-design-development.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">Webflow</div><div class="menu__nav-txt">Webflow</div></div></a></div><div class="menu__nav-item main-menu"><a href="services/mvp-development.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">MVP Development</div><div class="menu__nav-txt">MVP Development</div></div></a></div><div class="menu__nav-item main-menu"><a href="services/saas-design.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">SaaS Design</div><div class="menu__nav-txt">SaaS Design</div></div></a></div><div class="menu__nav-item main-menu"><a href="services/mobile-app-design.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">Mobile App</div><div class="menu__nav-txt">Mobile App</div></div></a></div><div class="menu__nav-item main-menu"><a href="services/design-system.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">Design System</div><div class="menu__nav-txt">Design System</div></div></a></div></div><div class="menu__col mod--center-1"><div class="menu__img-wrap overflow-visible"><div class="main-menu__img-anim main-menu"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/652640849c6b8376d3fcfd5c_ui-ux-design-services.png" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/652640849c6b8376d3fcfd5c_ui-ux-design-services-p-500.png 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/652640849c6b8376d3fcfd5c_ui-ux-design-services.png 546w" class="main-menu__img mod--default active"/><img src="../assets-global.website-files.com/643f7373d3f6653157617339/64d20386f39684b3109fab25_web-design.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d20386f39684b3109fab25_web-design-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d20386f39684b3109fab25_web-design.jpg 544w" class="main-menu__img mod--hover"/><img src="../assets-global.website-files.com/643f7373d3f6653157617339/64d3626d34cca03f258d8696_Branding.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d3626d34cca03f258d8696_Branding-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d3626d34cca03f258d8696_Branding.jpg 544w" class="main-menu__img mod--hover"/><img src="../assets-global.website-files.com/643f7373d3f6653157617339/64d205c49886311dd3d026e2_webflow-menu.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d205c49886311dd3d026e2_webflow-menu-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d205c49886311dd3d026e2_webflow-menu.jpg 544w" class="main-menu__img mod--hover"/><img src="../assets-global.website-files.com/643f7373d3f6653157617339/64d2062fddc3026cd20861ac_mvp.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d2062fddc3026cd20861ac_mvp-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d2062fddc3026cd20861ac_mvp.jpg 544w" class="main-menu__img mod--hover"/><img src="../assets-global.website-files.com/643f7373d3f6653157617339/64d203889efc2204f955ed48_sass.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d203889efc2204f955ed48_sass-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d203889efc2204f955ed48_sass.jpg 544w" class="main-menu__img mod--hover"/><img src="../assets-global.website-files.com/643f7373d3f6653157617339/64d2079a1155224d65ad119c_mobile%20design.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d2079a1155224d65ad119c_mobile%20design-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d2079a1155224d65ad119c_mobile%20design.jpg 544w" class="main-menu__img mod--hover"/><img src="../assets-global.website-files.com/643f7373d3f6653157617339/65263ffad923b93fe260e47b_design-system-services.png" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/65263ffad923b93fe260e47b_design-system-services-p-500.png 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/65263ffad923b93fe260e47b_design-system-services.png 544w" class="main-menu__img mod--hover"/></div></div></div></div></div></div></div><div class="process-responsive-embed w-embed"><style>
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .service-process-block.rounded {
+      width: 120px;
+      height: 50px;
+    }
+
+    .service-process-middle-block.d-flex.align-center-both {
+      grid-column-gap: 20px;
+    }
+
+    .project-contribution-area {
+      margin-top: -350px;
+      padding-top: 470px;
+    }
+
+    .service-process-block {
+      width: 120px;
+      height: 120px;
+    }
+
+    .service-process-block-dot-border {
+      width: 120px;
+      height: 120px;
+    }
+
+    .service-process-block.main-bg-color {
+      width: 105px;
+      height: 105px;
+    }
+
+    .process-dot-border-block.position-absolute {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    .service-process-middle-block {
+      padding: 45px 70px;
+      position: relative;
+    }
+
+    .service-process-wrap .paragraph-small {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .paragraph-big {
+      font-size: 38px;
+      line-height: 54px;
+    }
+
+    .make-right-content-wrap.d-flex {
+      display: block;
+    }
+
+    .mb-55 {
+      margin-bottom: 35px;
+    }
+
+    .section-title-wrap.mb-120 {
+      margin-bottom: 40px;
+    }
+
+    .make-content {
+      max-width: 100%;
+    }
+
+    .service-process-block.rounded {
+      width: 120px;
+      height: 50px;
+    }
+  }
+</style></div><div class="process-breadcrumb-area z-index bg-white"><div class="container-large"><div class="process-breadcrumb-inner-area"><div class="overflow-hidden animation"><h1 class="breadcrumb-title mb-40 title-animation-top">A Process — <span class="section-title-extra-color style-02">with You in Mind</span></h1></div><p data-w-id="f462c1b1-d39d-4fe3-6d0f-142b6226c3b8" style="opacity:0" class="breadcrumb-paragraph color-black">We embrace an effective design process that ensures flawless execution and delivers optimal outcomes, perfectly aligning our efforts with your vision.</p></div></div><div class="banner-3d-block d-m-none"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/64f989542324ecc4fb448878_3D%20Component.png" loading="lazy" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64f989542324ecc4fb448878_3D%20Component-p-500.png 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64f989542324ecc4fb448878_3D%20Component-p-800.png 800w, https://assets-global.website-files.com/643f7373d3f6653157617339/64f989542324ecc4fb448878_3D%20Component.png 898w" alt="" sizes="(max-width: 479px) 100vw, 740px"/></div></div><div class="z-index"><div class="case-studies-featured-image-block bg-white"><div class="container"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64f0292d2bdb1efddee388cf_our-ui-ux-process.webp" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 95vw, (max-width: 1372px) 94vw, 1290px" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64f0292d2bdb1efddee388cf_our-ui-ux-process-p-500.webp 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64f0292d2bdb1efddee388cf_our-ui-ux-process-p-800.webp 800w, https://assets-global.website-files.com/643f7373d3f6653157617339/64f0292d2bdb1efddee388cf_our-ui-ux-process-p-1080.webp 1080w, https://assets-global.website-files.com/643f7373d3f6653157617339/64f0292d2bdb1efddee388cf_our-ui-ux-process.webp 1290w" alt="" class="case-studies-featured-image"/></div></div><div class="project-contribution-area bg-black"><div class="container"><div class="section-title-wrap text-center mb-140"><div class="overflow-hidden animation"><h2 class="inner-section-title fz-72 color-white title-animation-top">Our Standard Design<br/><span class="section-title-extra-color style-02">Thinking Process</span></h2></div></div><div class="service-process-wrap d-flex"><div class="service-process-block bg-white"><div class="paragraph-small fw-700 text-center">Business Strategy</div></div><div class="service-process-middle-block d-flex align-center-both"><div class="long-arrow-block position-absolute"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64c73d71646a08f9331b0a54_center long arrow.svg" loading="lazy" alt="" class="d-m-none"/><img src="../assets-global.website-files.com/643f7373d3f6653157617339/64e2e39bb12e8c1439144f4d_Arrow%202.png" loading="lazy" alt="" class="d-d-none"/></div><div class="service-process-block rounded bg-white"><div class="paragraph-small fw-700">Research</div></div><div class="service-process-block rounded bg-white"><div class="paragraph-small fw-700">Define</div></div><div class="restart-process-block position-absolute"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64c73a00c687ba041e626aea_refresh_02.svg" loading="lazy" alt=""/></div><div class="service-process-block rounded bg-white"><div class="paragraph-small fw-700">Design</div></div><div class="service-process-block rounded bg-white"><div class="paragraph-small fw-700">Evaluate</div></div><div class="process-dot-border-block position-absolute"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/64e2e62ea4fc44bcac7156e8_Group%201171277580.png" loading="lazy" alt="" class="d-d-none"/><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64c7389b62db2b29ae377c8f_Dot line with arrow.svg" loading="lazy" alt="" class="d-m-none"/></div></div><div class="service-process-block-dot-border"><div class="service-process-block main-bg-color"><div class="paragraph-small fw-700 text-center">Business Outcomes</div></div></div></div></div></div></div><div class="service-process-area section-padding z-index bg-white"><div class="container"><div class="process-inner-section-title mb-120"><div class="paragraph-small text-uppercase letter-spacing-4 mb-25 color-white"><span class="section-title-extra-color style-02">Design Process</span></div><div data-w-id="23af2526-ab14-c7ed-2abd-00c17f58f373" style="opacity:0" class="section-title fz-72">Business-Driven <span class="section-title-extra-color style-02">UX Design Process</span></div></div><div class="case-grid-item"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a491a-c451edc0" class="grid-one"></div><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a491b-c451edc0" class="grid-one"><div class="grid-item ux-process"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a491d-c451edc0" class="overflow-hidden animation"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a491e-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">01</div><div class="process-title fz-30 fw-500 text-line-highlight">Business Strategy</div></div></div><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a4923-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Business Goals</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Mission</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Target market</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Value proposition</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">SWOT analysis</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Business Model canvas</div></div></div></div><div class="grid-item ux-process"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a4943-c451edc0" class="overflow-hidden animation"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a4944-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">02</div><div class="process-title fz-30 fw-500">Research</div></div></div><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a4949-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Competitive Analysis</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">User Interviews</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Journey Mapping</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Value Proposition</div></div></div></div><div class="grid-item ux-process"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a4969-c451edc0" class="overflow-hidden animation"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a496a-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">03</div><div class="process-title fz-30 fw-500">Define</div></div></div><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a496f-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">UX Strategy</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Information Architecture</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">User Flows</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Visual Direction</div></div></div></div><div class="grid-item ux-process"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a498f-c451edc0" class="overflow-hidden animation"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a4990-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">04</div><div class="process-title fz-30 fw-500">Design</div></div></div><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a4995-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Wireframe</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Clickable Prototypes</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Visual Design</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Design System</div></div></div></div><div class="grid-item ux-process"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a49b5-c451edc0" class="overflow-hidden animation"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a49b6-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">05</div><div class="process-title fz-30 fw-500">Evaluate</div></div></div><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a49bb-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">A/B Testing</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Metrics Analysis</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">UX Audit</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Usability Testing</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">User Surveys</div></div></div></div><div class="grid-item ux-process mb-0"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a49db-c451edc0" class="overflow-hidden animation"><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a49dc-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">06</div><div class="process-title fz-30 fw-500 text-line-highlight">Business Outcome</div></div></div><div id="w-node-bca093a8-5c0c-c470-1367-edc2054a49e1-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Increased Revenue</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Reduced Churn</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Improved Metrics</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Faster Time to Market</div></div></div></div></div></div></div></div><div class="process-inner-image-block z-index bg-white"><div class="container"><div class="grid-item gap-30"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64f029388c1ccaabd0bffd1c_our-ux-design-process.webp" loading="lazy" id="w-node-_0a958d5b-0ca5-1c81-75d2-0a6376125a7a-c451edc0" sizes="100vw" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64f029388c1ccaabd0bffd1c_our-ux-design-process-p-500.webp 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64f029388c1ccaabd0bffd1c_our-ux-design-process.webp 630w" class="process-image"/><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64f0294294c42ca69b6b26ba_our-ui-ux-design-process.webp" loading="lazy" id="w-node-bfa9c4d1-8187-083d-2ab4-c868f8264cdb-c451edc0" sizes="100vw" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64f0294294c42ca69b6b26ba_our-ui-ux-design-process-p-500.webp 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64f0294294c42ca69b6b26ba_our-ui-ux-design-process.webp 630w" class="process-image"/></div></div></div><div class="service-process-area section-padding z-index bg-white"><div class="container"><div class="process-inner-section-title mb-120"><div class="paragraph-small text-uppercase letter-spacing-4 mb-25 color-white"><span class="section-title-extra-color style-02">Implementation Process</span></div><div data-w-id="3dcc1c73-2b8f-f434-98c5-86dc48fbec65" style="opacity:0" class="section-title fz-72">Product Development <span class="section-title-extra-color style-02">Implementation Process</span></div></div><div class="case-grid-item"><div id="w-node-_3dcc1c73-2b8f-f434-98c5-86dc48fbec6a-c451edc0" class="grid-one"></div><div id="w-node-_3dcc1c73-2b8f-f434-98c5-86dc48fbec6b-c451edc0" class="grid-one"><div class="grid-item ux-process"><div id="w-node-f8d4dfee-fd37-7a59-c191-69efb554b38f-c451edc0" class="overflow-hidden animation"><div id="w-node-_3dcc1c73-2b8f-f434-98c5-86dc48fbec6d-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">01</div><div class="process-title fz-30 fw-500 text-line-highlight">Business Strategy</div></div></div><div id="w-node-_07e705cf-2569-1e24-b2c2-92528732b53c-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Business Goals</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Mission</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Target Market</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Value Proposition</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">SWOT Analysis</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Business Model Canvas</div></div></div></div><div class="grid-item ux-process"><div id="w-node-f549ca59-b254-785f-d58a-754cdde079b7-c451edc0" class="overflow-hidden animation"><div id="w-node-f549ca59-b254-785f-d58a-754cdde079b8-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">02</div><div class="process-title fz-30 fw-500">Research</div></div></div><div id="w-node-_8f700ee1-e697-64af-e151-1cd64d481108-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Wireframe</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Visual Design</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Design System</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Clickable Prototypes</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Developer Handoff</div></div></div></div><div class="grid-item ux-process"><div id="w-node-_058ddd33-e205-1d1b-23d6-e1677defed10-c451edc0" class="overflow-hidden animation"><div id="w-node-_058ddd33-e205-1d1b-23d6-e1677defed11-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">03</div><div class="process-title fz-30 fw-500">Build &amp; Test</div></div></div><div id="w-node-_2c215122-7778-0168-edad-d98d4c4ab08c-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Discovery Workshop</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">No-code Development</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Front-end Development</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Back-end Development</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Quality assurance (QA)</div></div></div></div><div class="grid-item ux-process"><div id="w-node-_82065f0b-2d72-5f59-5f23-ac035bee3014-c451edc0" class="overflow-hidden animation"><div id="w-node-_82065f0b-2d72-5f59-5f23-ac035bee3015-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">04</div><div class="process-title fz-30 fw-500">Launch</div></div></div><div class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Wireframe</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Clickable Prototype</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Visual Design</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Design System</div></div></div></div><div class="grid-item ux-process"><div id="w-node-ceff2e76-5fde-dafe-6eb9-aeba31d2555f-c451edc0" class="overflow-hidden animation"><div id="w-node-_3dcc1c73-2b8f-f434-98c5-86dc48fbed01-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">05</div><div class="process-title fz-30 fw-500">Test &amp; Iterate</div></div></div><div id="w-node-af9d49b7-42bd-8f6d-bd5c-bbea5328d899-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Quality Assurance (QA)</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Usability Testing</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">User Feedback</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Implementation</div></div></div></div><div class="grid-item ux-process mb-0"><div id="w-node-_7fcd2ab3-9473-6e9b-798a-d8cdaecf8bc7-c451edc0" class="overflow-hidden animation"><div id="w-node-_3dcc1c73-2b8f-f434-98c5-86dc48fbed26-c451edc0" class="deliverables-title-wrap title-animation-top"><div class="question-number">06</div><div class="process-title fz-30 fw-500 text-line-highlight">Maintenance</div></div></div><div id="w-node-_3ccdee60-d073-4c94-6a6f-c2145804c010-c451edc0" class="grid-one"><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Maintenance</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Future Development</div></div><div class="want-more-list mb-12"><div class="want-more-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64ab966e752f2e9019de5600_short_right.svg" loading="lazy" alt="" class="want-more-icon"/></div><div class="want-more-list-item">Continues Support</div></div></div></div></div></div></div></div><div class="process-inner-image-block z-index bg-white"><div class="container"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64f029578c1ccaabd0c023ad_product-development-process.webp" loading="lazy" id="w-node-_3dcc1c73-2b8f-f434-98c5-86dc48fbed4b-c451edc0" sizes="100vw" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64f029578c1ccaabd0c023ad_product-development-process-p-500.webp 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64f029578c1ccaabd0c023ad_product-development-process-p-800.webp 800w, https://assets-global.website-files.com/643f7373d3f6653157617339/64f029578c1ccaabd0c023ad_product-development-process-p-1080.webp 1080w, https://assets-global.website-files.com/643f7373d3f6653157617339/64f029578c1ccaabd0c023ad_product-development-process.webp 1290w" class="process-image"/></div></div><div class="our-service-capabilities-area section-padding bg-white z-index"><div class="container overflow-visible"><div class="case-grid-item"><div id="w-node-bfa55242-cc0f-68f5-5e9d-dfb4ca2caafb-c451edc0" class="overflow-hidden animation"><div class="paragraph-small text-uppercase letter-spacing-4 mb-25 color-white title-animation-top"><span class="section-title-extra-color style-02">WHAT TO EXPECT</span></div></div><div class="grid-item gap-70"><div data-w-id="b2e0ed98-e6b9-d648-79aa-082d78e9ca9f" style="opacity:0" class="service-capabilities-item service-border-bottom pb-35"><div class="service-capabilities-item-content"><div class="service-capabilities-item-title mb-25">User-centered Approach</div><div class="service-capabilities-item-details color-gray-700">We prioritize users, conducting thorough research to create designs that resonate, enhancing engagement and fostering lasting connections.</div></div></div><div data-w-id="b2e0ed98-e6b9-d648-79aa-082d78e9caa5" style="opacity:0" class="service-capabilities-item service-border-bottom pb-35"><div class="service-capabilities-item-content"><div class="service-capabilities-item-title mb-25">Data-Informed Decisions</div><div class="service-capabilities-item-details color-gray-700">We leverage user behavior insights, aligning design choices with data for optimal usability and impactful user interactions.</div></div></div><div data-w-id="b2e0ed98-e6b9-d648-79aa-082d78e9caab" style="opacity:0" class="service-capabilities-item service-border-bottom pb-35"><div class="service-capabilities-item-content"><div class="service-capabilities-item-title mb-25">Holistic Strategy</div><div class="service-capabilities-item-details color-gray-700">We unify UX, UI, and functionality seamlessly, crafting designs that authentically reflect your brand, delivering holistic and cohesive experiences.</div></div></div><div data-w-id="b2e0ed98-e6b9-d648-79aa-082d78e9cab1" style="opacity:0" class="service-capabilities-item service-border-bottom pb-35"><div class="service-capabilities-item-content"><div class="service-capabilities-item-title mb-25">Tailored solutions</div><div class="service-capabilities-item-details color-gray-700">We delve into user personas, forging custom solutions to address specific challenges, ensuring designs align precisely with user need.</div></div></div><div data-w-id="b2e0ed98-e6b9-d648-79aa-082d78e9cab7" style="opacity:0" class="service-capabilities-item service-border-bottom pb-35"><div class="service-capabilities-item-content"><div class="service-capabilities-item-title mb-25">Timely Delivery</div><div class="service-capabilities-item-details color-gray-700">Our streamlined workflows and strategic planning ensure projects are delivered promptly, adhering to your timelines without compromise.</div></div></div><div data-w-id="b2e0ed98-e6b9-d648-79aa-082d78e9cabd" style="opacity:0" class="service-capabilities-item service-border-bottom pb-35"><div class="service-capabilities-item-content"><div class="service-capabilities-item-title mb-25">Long Term-viability</div><div class="service-capabilities-item-details color-gray-700">With in-depth foresight, we design for longevity, anticipating trends and changes, which results in sustained relevance and minimized need for constant updates.</div></div></div></div></div></div></div><div class="process-testimonial-area section-padding-bottom bg-white z-index"><div class="container"><div class="process-testimonial-item text-center"><div data-w-id="2aa993db-b0b4-1163-7b00-45d062eb72ff" style="opacity:0" class="project-quote-thumbnail-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6481be746de998b2e94ec830_Layer_1.svg" loading="lazy" alt="" class="project-quote-icon"/></div><div class="project-quote-content"><div data-w-id="2aa993db-b0b4-1163-7b00-45d062eb7302" style="opacity:0" class="paragraph-big color-black mb-55">“Musemind swiftly delivered content in two weeks, <span class="section-title-extra-color style-02">meeting client expectations,</span> and managed workflow and <span class="section-title-extra-color style-02">communication efficiently and positively.</span>”</div><div data-w-id="2aa993db-b0b4-1163-7b00-45d062eb730b" style="opacity:0" class="paragraph-small color-black">Yaqin Liu, <span class="section-title-extra-color style-02"> Product Manager at Lingxing</span></div></div></div></div></div><div class="z-index"><section id="world-class-area" class="service-subscription-area bg-white"><div class="container-medium overflow-visible"><div data-w-id="8b4a1de9-8d22-fb20-65ea-915a5365e066" class="make-right-content-wrap d-flex z-index main-bg-color"><div class="grid-one"><div class="section-title-wrap"><div class="section-title fz-72">Your Vision<br/>Our process Stellar Results!</div></div></div><div class="make-content"><div class="paragraph-regular mb-45">At Musemind, your vision is our compass. Through our proven process, we navigate challenges, crafting stellar results that reflect our commitment to excellence!</div><div data-w-id="8b4a1de9-8d22-fb20-65ea-915a5365e06f" style="opacity:0" class="btn-wrapper"><div data-w-id="8b4a1de9-8d22-fb20-65ea-915a5365e070" class="button-hover-wrap"><div class="button-icon left bg-black"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/64770699e8f144a44e69d8a2_short_down.svg" class="image-icon"/></div><a href="contact.html" class="primary-button-2 bg-black w-inline-block"><div class="button-content"><div class="button-color color-white">Contact us</div></div></a><div class="button-icon right bg-black"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/64770699e8f144a44e69d8a2_short_down.svg" class="image-icon"/></div></div></div></div></div></div></section><section data-w-id="29463cdc-5bfd-4419-c506-8df37082ad68" class="what-we-do-area section-padding-bottom bg-black"><div class="container overflow-visible"><div class="what-we-do-content-wrap"><div id="w-node-_29463cdc-5bfd-4419-c506-8df37082ad74-c451edc0" class="we-do-left-content"><div class="paragraph-small text-uppercase letter-spacing-4 color-white">Our Services</div></div><div class="we-do-item-wrap"><div class="we-do-item"><div class="we-do-question"><div class="we-do-title color-white">UI/UX Design</div><div class="we-do-arrow-wrap"><div class="we-do-expand-icon w-embed"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.933053 8.58147C1.05028 8.4643 1.20924 8.39848 1.37499 8.39848C1.54073 8.39848 1.69969 8.4643 1.81692 8.58147L6.37498 13.1396L6.37499 0.898437C6.37499 0.732677 6.44083 0.573706 6.55804 0.456496C6.67525 0.339285 6.83422 0.273437 6.99999 0.273437C7.16575 0.273437 7.32472 0.339285 7.44193 0.456496C7.55914 0.573706 7.62499 0.732677 7.62499 0.898437L7.62498 13.1396L12.1831 8.58147C12.2411 8.52343 12.31 8.4774 12.3858 8.44599C12.4617 8.41458 12.5429 8.39842 12.625 8.39842C12.7071 8.39843 12.7884 8.4146 12.8642 8.44601C12.94 8.47742 13.0089 8.52346 13.067 8.5815C13.125 8.63955 13.171 8.70845 13.2024 8.78428C13.2338 8.86011 13.25 8.94139 13.25 9.02347C13.25 9.10554 13.2338 9.18682 13.2024 9.26265C13.171 9.33847 13.125 9.40737 13.0669 9.46541L7.44192 15.0904C7.4399 15.0924 7.43764 15.0941 7.43558 15.0961C7.42292 15.1085 7.40991 15.1204 7.39626 15.1317C7.38863 15.138 7.38054 15.1434 7.37268 15.1493C7.36421 15.1556 7.3559 15.1622 7.34708 15.1681C7.338 15.1742 7.32854 15.1795 7.3192 15.1851C7.31103 15.1899 7.30306 15.195 7.29463 15.1996C7.28525 15.2046 7.27556 15.2089 7.26598 15.2134C7.25706 15.2176 7.24828 15.222 7.23917 15.2258C7.22993 15.2296 7.22047 15.2327 7.21109 15.2361C7.20125 15.2396 7.19148 15.2434 7.18141 15.2465C7.17207 15.2493 7.16257 15.2514 7.15311 15.2538C7.14281 15.2563 7.13258 15.2592 7.12209 15.2613C7.11118 15.2635 7.10019 15.2648 7.08925 15.2663C7.08001 15.2677 7.07097 15.2694 7.06167 15.2703C7.04115 15.2723 7.02058 15.2734 6.99998 15.2734C6.97939 15.2734 6.95882 15.2723 6.9383 15.2703C6.92899 15.2694 6.91995 15.2677 6.91072 15.2663C6.89978 15.2648 6.88879 15.2635 6.87788 15.2613C6.86739 15.2592 6.85716 15.2563 6.84686 15.2538C6.8374 15.2514 6.8279 15.2493 6.81856 15.2465C6.80849 15.2434 6.79872 15.2396 6.78888 15.2361C6.77949 15.2327 6.77003 15.2296 6.7608 15.2258C6.75169 15.222 6.74291 15.2176 6.73399 15.2134C6.72441 15.2089 6.71472 15.2046 6.70534 15.1996C6.69691 15.195 6.68893 15.1899 6.68077 15.1851C6.67142 15.1795 6.66196 15.1742 6.65289 15.1681C6.64407 15.1622 6.63576 15.1556 6.62729 15.1493C6.61943 15.1434 6.61134 15.138 6.60371 15.1317C6.58979 15.1203 6.57655 15.1081 6.56366 15.0955C6.56186 15.0937 6.55984 15.0922 6.55805 15.0904L0.933053 9.46541C0.87501 9.40737 0.828969 9.33847 0.797556 9.26263C0.766143 9.1868 0.749976 9.10552 0.749976 9.02344C0.749976 8.94136 0.766143 8.86008 0.797556 8.78424C0.828969 8.70841 0.87501 8.63951 0.933053 8.58147Z" fill="white"/>
+</svg></div></div></div><div class="we-do-answer"><div class="we-do-answer-inner"><p class="we-do-paragraph mb-35">Exceptional UX isn&#x27;t just design; it&#x27;s a journey that builds trust, forges loyalty, and makes your brand unforgettable and this is our commitment to you from our UX design agency.<br/></p><div class="btn-wrapper"><div data-w-id="185658de-f801-a0ed-0549-8281af64fa27" class="button-hover-wrap"><div class="button-icon left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="services/ui-ux-design.html" class="primary-button-2 main-bg-color w-inline-block"><div class="button-content"><div class="button-color color-black">Explore More</div></div></a><div class="button-icon right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div></div></div><div class="we-do-item"><div class="we-do-question"><div class="we-do-title color-white">Web Design</div><div class="we-do-arrow-wrap"><div class="we-do-expand-icon w-embed"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.933053 8.58147C1.05028 8.4643 1.20924 8.39848 1.37499 8.39848C1.54073 8.39848 1.69969 8.4643 1.81692 8.58147L6.37498 13.1396L6.37499 0.898437C6.37499 0.732677 6.44083 0.573706 6.55804 0.456496C6.67525 0.339285 6.83422 0.273437 6.99999 0.273437C7.16575 0.273437 7.32472 0.339285 7.44193 0.456496C7.55914 0.573706 7.62499 0.732677 7.62499 0.898437L7.62498 13.1396L12.1831 8.58147C12.2411 8.52343 12.31 8.4774 12.3858 8.44599C12.4617 8.41458 12.5429 8.39842 12.625 8.39842C12.7071 8.39843 12.7884 8.4146 12.8642 8.44601C12.94 8.47742 13.0089 8.52346 13.067 8.5815C13.125 8.63955 13.171 8.70845 13.2024 8.78428C13.2338 8.86011 13.25 8.94139 13.25 9.02347C13.25 9.10554 13.2338 9.18682 13.2024 9.26265C13.171 9.33847 13.125 9.40737 13.0669 9.46541L7.44192 15.0904C7.4399 15.0924 7.43764 15.0941 7.43558 15.0961C7.42292 15.1085 7.40991 15.1204 7.39626 15.1317C7.38863 15.138 7.38054 15.1434 7.37268 15.1493C7.36421 15.1556 7.3559 15.1622 7.34708 15.1681C7.338 15.1742 7.32854 15.1795 7.3192 15.1851C7.31103 15.1899 7.30306 15.195 7.29463 15.1996C7.28525 15.2046 7.27556 15.2089 7.26598 15.2134C7.25706 15.2176 7.24828 15.222 7.23917 15.2258C7.22993 15.2296 7.22047 15.2327 7.21109 15.2361C7.20125 15.2396 7.19148 15.2434 7.18141 15.2465C7.17207 15.2493 7.16257 15.2514 7.15311 15.2538C7.14281 15.2563 7.13258 15.2592 7.12209 15.2613C7.11118 15.2635 7.10019 15.2648 7.08925 15.2663C7.08001 15.2677 7.07097 15.2694 7.06167 15.2703C7.04115 15.2723 7.02058 15.2734 6.99998 15.2734C6.97939 15.2734 6.95882 15.2723 6.9383 15.2703C6.92899 15.2694 6.91995 15.2677 6.91072 15.2663C6.89978 15.2648 6.88879 15.2635 6.87788 15.2613C6.86739 15.2592 6.85716 15.2563 6.84686 15.2538C6.8374 15.2514 6.8279 15.2493 6.81856 15.2465C6.80849 15.2434 6.79872 15.2396 6.78888 15.2361C6.77949 15.2327 6.77003 15.2296 6.7608 15.2258C6.75169 15.222 6.74291 15.2176 6.73399 15.2134C6.72441 15.2089 6.71472 15.2046 6.70534 15.1996C6.69691 15.195 6.68893 15.1899 6.68077 15.1851C6.67142 15.1795 6.66196 15.1742 6.65289 15.1681C6.64407 15.1622 6.63576 15.1556 6.62729 15.1493C6.61943 15.1434 6.61134 15.138 6.60371 15.1317C6.58979 15.1203 6.57655 15.1081 6.56366 15.0955C6.56186 15.0937 6.55984 15.0922 6.55805 15.0904L0.933053 9.46541C0.87501 9.40737 0.828969 9.33847 0.797556 9.26263C0.766143 9.1868 0.749976 9.10552 0.749976 9.02344C0.749976 8.94136 0.766143 8.86008 0.797556 8.78424C0.828969 8.70841 0.87501 8.63951 0.933053 8.58147Z" fill="white"/>
+</svg></div></div></div><div class="we-do-answer"><div class="we-do-answer-inner"><p class="we-do-paragraph mb-35">Our professional web design solutions are creative and functional to create stunning websites.  We ensure that your website conveys your brand message and increases user retention.<br/></p><div class="btn-wrapper"><div data-w-id="185658de-f801-a0ed-0549-8281af64fa3c" class="button-hover-wrap"><div class="button-icon left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="services/web-design-development.html" class="primary-button-2 main-bg-color w-inline-block"><div class="button-content"><div class="button-color color-black">Explore More</div></div></a><div class="button-icon right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div></div></div><div class="we-do-item"><div class="we-do-question"><div class="we-do-title color-white">Branding</div><div class="we-do-arrow-wrap"><div class="we-do-expand-icon w-embed"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.933053 8.58147C1.05028 8.4643 1.20924 8.39848 1.37499 8.39848C1.54073 8.39848 1.69969 8.4643 1.81692 8.58147L6.37498 13.1396L6.37499 0.898437C6.37499 0.732677 6.44083 0.573706 6.55804 0.456496C6.67525 0.339285 6.83422 0.273437 6.99999 0.273437C7.16575 0.273437 7.32472 0.339285 7.44193 0.456496C7.55914 0.573706 7.62499 0.732677 7.62499 0.898437L7.62498 13.1396L12.1831 8.58147C12.2411 8.52343 12.31 8.4774 12.3858 8.44599C12.4617 8.41458 12.5429 8.39842 12.625 8.39842C12.7071 8.39843 12.7884 8.4146 12.8642 8.44601C12.94 8.47742 13.0089 8.52346 13.067 8.5815C13.125 8.63955 13.171 8.70845 13.2024 8.78428C13.2338 8.86011 13.25 8.94139 13.25 9.02347C13.25 9.10554 13.2338 9.18682 13.2024 9.26265C13.171 9.33847 13.125 9.40737 13.0669 9.46541L7.44192 15.0904C7.4399 15.0924 7.43764 15.0941 7.43558 15.0961C7.42292 15.1085 7.40991 15.1204 7.39626 15.1317C7.38863 15.138 7.38054 15.1434 7.37268 15.1493C7.36421 15.1556 7.3559 15.1622 7.34708 15.1681C7.338 15.1742 7.32854 15.1795 7.3192 15.1851C7.31103 15.1899 7.30306 15.195 7.29463 15.1996C7.28525 15.2046 7.27556 15.2089 7.26598 15.2134C7.25706 15.2176 7.24828 15.222 7.23917 15.2258C7.22993 15.2296 7.22047 15.2327 7.21109 15.2361C7.20125 15.2396 7.19148 15.2434 7.18141 15.2465C7.17207 15.2493 7.16257 15.2514 7.15311 15.2538C7.14281 15.2563 7.13258 15.2592 7.12209 15.2613C7.11118 15.2635 7.10019 15.2648 7.08925 15.2663C7.08001 15.2677 7.07097 15.2694 7.06167 15.2703C7.04115 15.2723 7.02058 15.2734 6.99998 15.2734C6.97939 15.2734 6.95882 15.2723 6.9383 15.2703C6.92899 15.2694 6.91995 15.2677 6.91072 15.2663C6.89978 15.2648 6.88879 15.2635 6.87788 15.2613C6.86739 15.2592 6.85716 15.2563 6.84686 15.2538C6.8374 15.2514 6.8279 15.2493 6.81856 15.2465C6.80849 15.2434 6.79872 15.2396 6.78888 15.2361C6.77949 15.2327 6.77003 15.2296 6.7608 15.2258C6.75169 15.222 6.74291 15.2176 6.73399 15.2134C6.72441 15.2089 6.71472 15.2046 6.70534 15.1996C6.69691 15.195 6.68893 15.1899 6.68077 15.1851C6.67142 15.1795 6.66196 15.1742 6.65289 15.1681C6.64407 15.1622 6.63576 15.1556 6.62729 15.1493C6.61943 15.1434 6.61134 15.138 6.60371 15.1317C6.58979 15.1203 6.57655 15.1081 6.56366 15.0955C6.56186 15.0937 6.55984 15.0922 6.55805 15.0904L0.933053 9.46541C0.87501 9.40737 0.828969 9.33847 0.797556 9.26263C0.766143 9.1868 0.749976 9.10552 0.749976 9.02344C0.749976 8.94136 0.766143 8.86008 0.797556 8.78424C0.828969 8.70841 0.87501 8.63951 0.933053 8.58147Z" fill="white"/>
+</svg></div></div></div><div class="we-do-answer"><div class="we-do-answer-inner"><p class="we-do-paragraph mb-35">Effective branding isn&#x27;t just about logos and colors; it&#x27;s about creating a lasting impression that distinguishes your business. At Musemind, we craft unique brand identities that resonate with your audience, enhancing recognition and trust.<br/></p><div class="btn-wrapper"><div data-w-id="185658de-f801-a0ed-0549-8281af64fa51" class="button-hover-wrap"><div class="button-icon left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="services/brand-identity-design.html" class="primary-button-2 main-bg-color w-inline-block"><div class="button-content"><div class="button-color color-black">Explore More</div></div></a><div class="button-icon right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div></div></div><div class="we-do-item"><div class="we-do-question"><div class="we-do-title color-white">Webflow</div><div class="we-do-arrow-wrap"><div class="we-do-expand-icon w-embed"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.933053 8.58147C1.05028 8.4643 1.20924 8.39848 1.37499 8.39848C1.54073 8.39848 1.69969 8.4643 1.81692 8.58147L6.37498 13.1396L6.37499 0.898437C6.37499 0.732677 6.44083 0.573706 6.55804 0.456496C6.67525 0.339285 6.83422 0.273437 6.99999 0.273437C7.16575 0.273437 7.32472 0.339285 7.44193 0.456496C7.55914 0.573706 7.62499 0.732677 7.62499 0.898437L7.62498 13.1396L12.1831 8.58147C12.2411 8.52343 12.31 8.4774 12.3858 8.44599C12.4617 8.41458 12.5429 8.39842 12.625 8.39842C12.7071 8.39843 12.7884 8.4146 12.8642 8.44601C12.94 8.47742 13.0089 8.52346 13.067 8.5815C13.125 8.63955 13.171 8.70845 13.2024 8.78428C13.2338 8.86011 13.25 8.94139 13.25 9.02347C13.25 9.10554 13.2338 9.18682 13.2024 9.26265C13.171 9.33847 13.125 9.40737 13.0669 9.46541L7.44192 15.0904C7.4399 15.0924 7.43764 15.0941 7.43558 15.0961C7.42292 15.1085 7.40991 15.1204 7.39626 15.1317C7.38863 15.138 7.38054 15.1434 7.37268 15.1493C7.36421 15.1556 7.3559 15.1622 7.34708 15.1681C7.338 15.1742 7.32854 15.1795 7.3192 15.1851C7.31103 15.1899 7.30306 15.195 7.29463 15.1996C7.28525 15.2046 7.27556 15.2089 7.26598 15.2134C7.25706 15.2176 7.24828 15.222 7.23917 15.2258C7.22993 15.2296 7.22047 15.2327 7.21109 15.2361C7.20125 15.2396 7.19148 15.2434 7.18141 15.2465C7.17207 15.2493 7.16257 15.2514 7.15311 15.2538C7.14281 15.2563 7.13258 15.2592 7.12209 15.2613C7.11118 15.2635 7.10019 15.2648 7.08925 15.2663C7.08001 15.2677 7.07097 15.2694 7.06167 15.2703C7.04115 15.2723 7.02058 15.2734 6.99998 15.2734C6.97939 15.2734 6.95882 15.2723 6.9383 15.2703C6.92899 15.2694 6.91995 15.2677 6.91072 15.2663C6.89978 15.2648 6.88879 15.2635 6.87788 15.2613C6.86739 15.2592 6.85716 15.2563 6.84686 15.2538C6.8374 15.2514 6.8279 15.2493 6.81856 15.2465C6.80849 15.2434 6.79872 15.2396 6.78888 15.2361C6.77949 15.2327 6.77003 15.2296 6.7608 15.2258C6.75169 15.222 6.74291 15.2176 6.73399 15.2134C6.72441 15.2089 6.71472 15.2046 6.70534 15.1996C6.69691 15.195 6.68893 15.1899 6.68077 15.1851C6.67142 15.1795 6.66196 15.1742 6.65289 15.1681C6.64407 15.1622 6.63576 15.1556 6.62729 15.1493C6.61943 15.1434 6.61134 15.138 6.60371 15.1317C6.58979 15.1203 6.57655 15.1081 6.56366 15.0955C6.56186 15.0937 6.55984 15.0922 6.55805 15.0904L0.933053 9.46541C0.87501 9.40737 0.828969 9.33847 0.797556 9.26263C0.766143 9.1868 0.749976 9.10552 0.749976 9.02344C0.749976 8.94136 0.766143 8.86008 0.797556 8.78424C0.828969 8.70841 0.87501 8.63951 0.933053 8.58147Z" fill="white"/>
+</svg></div></div></div><div class="we-do-answer"><div class="we-do-answer-inner"><p class="we-do-paragraph mb-35">SaaS UX design matters most because it directly impacts user satisfaction, adoption, and retention. Musemind understands this, which is why we have dedicated SaaS experts in our design agency.<br/></p><div class="btn-wrapper"><div data-w-id="185658de-f801-a0ed-0549-8281af64fa66" class="button-hover-wrap"><div class="button-icon left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="services/webflow-design-development.html" class="primary-button-2 main-bg-color w-inline-block"><div class="button-content"><div class="button-color color-black">Explore More</div></div></a><div class="button-icon right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div></div></div><div class="we-do-item"><div class="we-do-question"><div class="we-do-title color-white">MVP Development</div><div class="we-do-arrow-wrap"><div class="we-do-expand-icon w-embed"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.933053 8.58147C1.05028 8.4643 1.20924 8.39848 1.37499 8.39848C1.54073 8.39848 1.69969 8.4643 1.81692 8.58147L6.37498 13.1396L6.37499 0.898437C6.37499 0.732677 6.44083 0.573706 6.55804 0.456496C6.67525 0.339285 6.83422 0.273437 6.99999 0.273437C7.16575 0.273437 7.32472 0.339285 7.44193 0.456496C7.55914 0.573706 7.62499 0.732677 7.62499 0.898437L7.62498 13.1396L12.1831 8.58147C12.2411 8.52343 12.31 8.4774 12.3858 8.44599C12.4617 8.41458 12.5429 8.39842 12.625 8.39842C12.7071 8.39843 12.7884 8.4146 12.8642 8.44601C12.94 8.47742 13.0089 8.52346 13.067 8.5815C13.125 8.63955 13.171 8.70845 13.2024 8.78428C13.2338 8.86011 13.25 8.94139 13.25 9.02347C13.25 9.10554 13.2338 9.18682 13.2024 9.26265C13.171 9.33847 13.125 9.40737 13.0669 9.46541L7.44192 15.0904C7.4399 15.0924 7.43764 15.0941 7.43558 15.0961C7.42292 15.1085 7.40991 15.1204 7.39626 15.1317C7.38863 15.138 7.38054 15.1434 7.37268 15.1493C7.36421 15.1556 7.3559 15.1622 7.34708 15.1681C7.338 15.1742 7.32854 15.1795 7.3192 15.1851C7.31103 15.1899 7.30306 15.195 7.29463 15.1996C7.28525 15.2046 7.27556 15.2089 7.26598 15.2134C7.25706 15.2176 7.24828 15.222 7.23917 15.2258C7.22993 15.2296 7.22047 15.2327 7.21109 15.2361C7.20125 15.2396 7.19148 15.2434 7.18141 15.2465C7.17207 15.2493 7.16257 15.2514 7.15311 15.2538C7.14281 15.2563 7.13258 15.2592 7.12209 15.2613C7.11118 15.2635 7.10019 15.2648 7.08925 15.2663C7.08001 15.2677 7.07097 15.2694 7.06167 15.2703C7.04115 15.2723 7.02058 15.2734 6.99998 15.2734C6.97939 15.2734 6.95882 15.2723 6.9383 15.2703C6.92899 15.2694 6.91995 15.2677 6.91072 15.2663C6.89978 15.2648 6.88879 15.2635 6.87788 15.2613C6.86739 15.2592 6.85716 15.2563 6.84686 15.2538C6.8374 15.2514 6.8279 15.2493 6.81856 15.2465C6.80849 15.2434 6.79872 15.2396 6.78888 15.2361C6.77949 15.2327 6.77003 15.2296 6.7608 15.2258C6.75169 15.222 6.74291 15.2176 6.73399 15.2134C6.72441 15.2089 6.71472 15.2046 6.70534 15.1996C6.69691 15.195 6.68893 15.1899 6.68077 15.1851C6.67142 15.1795 6.66196 15.1742 6.65289 15.1681C6.64407 15.1622 6.63576 15.1556 6.62729 15.1493C6.61943 15.1434 6.61134 15.138 6.60371 15.1317C6.58979 15.1203 6.57655 15.1081 6.56366 15.0955C6.56186 15.0937 6.55984 15.0922 6.55805 15.0904L0.933053 9.46541C0.87501 9.40737 0.828969 9.33847 0.797556 9.26263C0.766143 9.1868 0.749976 9.10552 0.749976 9.02344C0.749976 8.94136 0.766143 8.86008 0.797556 8.78424C0.828969 8.70841 0.87501 8.63951 0.933053 8.58147Z" fill="white"/>
+</svg></div></div></div><div class="we-do-answer"><div class="we-do-answer-inner"><p class="we-do-paragraph mb-35">In today&#x27;s digital landscape, a well-structured website is essential. Webflow enables us to build scalable, high-performance websites with precision. With Webflow, your online presence is future-proof.<br/></p><div class="btn-wrapper"><div data-w-id="185658de-f801-a0ed-0549-8281af64fa7b" class="button-hover-wrap"><div class="button-icon left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="services/mvp-development.html" class="primary-button-2 main-bg-color w-inline-block"><div class="button-content"><div class="button-color color-black">Explore More</div></div></a><div class="button-icon right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div></div></div><div class="we-do-item"><div class="we-do-question"><div class="we-do-title color-white">SaaS Design</div><div class="we-do-arrow-wrap"><div class="we-do-expand-icon w-embed"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.933053 8.58147C1.05028 8.4643 1.20924 8.39848 1.37499 8.39848C1.54073 8.39848 1.69969 8.4643 1.81692 8.58147L6.37498 13.1396L6.37499 0.898437C6.37499 0.732677 6.44083 0.573706 6.55804 0.456496C6.67525 0.339285 6.83422 0.273437 6.99999 0.273437C7.16575 0.273437 7.32472 0.339285 7.44193 0.456496C7.55914 0.573706 7.62499 0.732677 7.62499 0.898437L7.62498 13.1396L12.1831 8.58147C12.2411 8.52343 12.31 8.4774 12.3858 8.44599C12.4617 8.41458 12.5429 8.39842 12.625 8.39842C12.7071 8.39843 12.7884 8.4146 12.8642 8.44601C12.94 8.47742 13.0089 8.52346 13.067 8.5815C13.125 8.63955 13.171 8.70845 13.2024 8.78428C13.2338 8.86011 13.25 8.94139 13.25 9.02347C13.25 9.10554 13.2338 9.18682 13.2024 9.26265C13.171 9.33847 13.125 9.40737 13.0669 9.46541L7.44192 15.0904C7.4399 15.0924 7.43764 15.0941 7.43558 15.0961C7.42292 15.1085 7.40991 15.1204 7.39626 15.1317C7.38863 15.138 7.38054 15.1434 7.37268 15.1493C7.36421 15.1556 7.3559 15.1622 7.34708 15.1681C7.338 15.1742 7.32854 15.1795 7.3192 15.1851C7.31103 15.1899 7.30306 15.195 7.29463 15.1996C7.28525 15.2046 7.27556 15.2089 7.26598 15.2134C7.25706 15.2176 7.24828 15.222 7.23917 15.2258C7.22993 15.2296 7.22047 15.2327 7.21109 15.2361C7.20125 15.2396 7.19148 15.2434 7.18141 15.2465C7.17207 15.2493 7.16257 15.2514 7.15311 15.2538C7.14281 15.2563 7.13258 15.2592 7.12209 15.2613C7.11118 15.2635 7.10019 15.2648 7.08925 15.2663C7.08001 15.2677 7.07097 15.2694 7.06167 15.2703C7.04115 15.2723 7.02058 15.2734 6.99998 15.2734C6.97939 15.2734 6.95882 15.2723 6.9383 15.2703C6.92899 15.2694 6.91995 15.2677 6.91072 15.2663C6.89978 15.2648 6.88879 15.2635 6.87788 15.2613C6.86739 15.2592 6.85716 15.2563 6.84686 15.2538C6.8374 15.2514 6.8279 15.2493 6.81856 15.2465C6.80849 15.2434 6.79872 15.2396 6.78888 15.2361C6.77949 15.2327 6.77003 15.2296 6.7608 15.2258C6.75169 15.222 6.74291 15.2176 6.73399 15.2134C6.72441 15.2089 6.71472 15.2046 6.70534 15.1996C6.69691 15.195 6.68893 15.1899 6.68077 15.1851C6.67142 15.1795 6.66196 15.1742 6.65289 15.1681C6.64407 15.1622 6.63576 15.1556 6.62729 15.1493C6.61943 15.1434 6.61134 15.138 6.60371 15.1317C6.58979 15.1203 6.57655 15.1081 6.56366 15.0955C6.56186 15.0937 6.55984 15.0922 6.55805 15.0904L0.933053 9.46541C0.87501 9.40737 0.828969 9.33847 0.797556 9.26263C0.766143 9.1868 0.749976 9.10552 0.749976 9.02344C0.749976 8.94136 0.766143 8.86008 0.797556 8.78424C0.828969 8.70841 0.87501 8.63951 0.933053 8.58147Z" fill="white"/>
+</svg></div></div></div><div class="we-do-answer"><div class="we-do-answer-inner"><p class="we-do-paragraph mb-35">SaaS UX design matters most because it directly impacts user satisfaction, adoption, and retention. Musemind understands this, which is why we have dedicated SaaS experts in our design agency.<br/></p><div class="btn-wrapper"><div data-w-id="185658de-f801-a0ed-0549-8281af64fa90" class="button-hover-wrap"><div class="button-icon left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="services/saas-design.html" class="primary-button-2 main-bg-color w-inline-block"><div class="button-content"><div class="button-color color-black">Explore More</div></div></a><div class="button-icon right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div></div></div><div class="we-do-item"><div class="we-do-question"><div class="we-do-title color-white">Mobile App</div><div class="we-do-arrow-wrap"><div class="we-do-expand-icon w-embed"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.933053 8.58147C1.05028 8.4643 1.20924 8.39848 1.37499 8.39848C1.54073 8.39848 1.69969 8.4643 1.81692 8.58147L6.37498 13.1396L6.37499 0.898437C6.37499 0.732677 6.44083 0.573706 6.55804 0.456496C6.67525 0.339285 6.83422 0.273437 6.99999 0.273437C7.16575 0.273437 7.32472 0.339285 7.44193 0.456496C7.55914 0.573706 7.62499 0.732677 7.62499 0.898437L7.62498 13.1396L12.1831 8.58147C12.2411 8.52343 12.31 8.4774 12.3858 8.44599C12.4617 8.41458 12.5429 8.39842 12.625 8.39842C12.7071 8.39843 12.7884 8.4146 12.8642 8.44601C12.94 8.47742 13.0089 8.52346 13.067 8.5815C13.125 8.63955 13.171 8.70845 13.2024 8.78428C13.2338 8.86011 13.25 8.94139 13.25 9.02347C13.25 9.10554 13.2338 9.18682 13.2024 9.26265C13.171 9.33847 13.125 9.40737 13.0669 9.46541L7.44192 15.0904C7.4399 15.0924 7.43764 15.0941 7.43558 15.0961C7.42292 15.1085 7.40991 15.1204 7.39626 15.1317C7.38863 15.138 7.38054 15.1434 7.37268 15.1493C7.36421 15.1556 7.3559 15.1622 7.34708 15.1681C7.338 15.1742 7.32854 15.1795 7.3192 15.1851C7.31103 15.1899 7.30306 15.195 7.29463 15.1996C7.28525 15.2046 7.27556 15.2089 7.26598 15.2134C7.25706 15.2176 7.24828 15.222 7.23917 15.2258C7.22993 15.2296 7.22047 15.2327 7.21109 15.2361C7.20125 15.2396 7.19148 15.2434 7.18141 15.2465C7.17207 15.2493 7.16257 15.2514 7.15311 15.2538C7.14281 15.2563 7.13258 15.2592 7.12209 15.2613C7.11118 15.2635 7.10019 15.2648 7.08925 15.2663C7.08001 15.2677 7.07097 15.2694 7.06167 15.2703C7.04115 15.2723 7.02058 15.2734 6.99998 15.2734C6.97939 15.2734 6.95882 15.2723 6.9383 15.2703C6.92899 15.2694 6.91995 15.2677 6.91072 15.2663C6.89978 15.2648 6.88879 15.2635 6.87788 15.2613C6.86739 15.2592 6.85716 15.2563 6.84686 15.2538C6.8374 15.2514 6.8279 15.2493 6.81856 15.2465C6.80849 15.2434 6.79872 15.2396 6.78888 15.2361C6.77949 15.2327 6.77003 15.2296 6.7608 15.2258C6.75169 15.222 6.74291 15.2176 6.73399 15.2134C6.72441 15.2089 6.71472 15.2046 6.70534 15.1996C6.69691 15.195 6.68893 15.1899 6.68077 15.1851C6.67142 15.1795 6.66196 15.1742 6.65289 15.1681C6.64407 15.1622 6.63576 15.1556 6.62729 15.1493C6.61943 15.1434 6.61134 15.138 6.60371 15.1317C6.58979 15.1203 6.57655 15.1081 6.56366 15.0955C6.56186 15.0937 6.55984 15.0922 6.55805 15.0904L0.933053 9.46541C0.87501 9.40737 0.828969 9.33847 0.797556 9.26263C0.766143 9.1868 0.749976 9.10552 0.749976 9.02344C0.749976 8.94136 0.766143 8.86008 0.797556 8.78424C0.828969 8.70841 0.87501 8.63951 0.933053 8.58147Z" fill="white"/>
+</svg></div></div></div><div class="we-do-answer"><div class="we-do-answer-inner"><p class="we-do-paragraph mb-35">With an effective mobile app design, everything becomes fingertip accessible for everyone, driving convenience, engagement, and expanding your brand&#x27;s reach. This is what you will get in Musemind, trust us for a seamless design.<br/></p><div class="btn-wrapper"><div data-w-id="185658de-f801-a0ed-0549-8281af64faa5" class="button-hover-wrap"><div class="button-icon left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="services/mobile-app-design.html" class="primary-button-2 main-bg-color w-inline-block"><div class="button-content"><div class="button-color color-black">Explore More</div></div></a><div class="button-icon right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div></div></div><div class="we-do-item"><div class="we-do-question"><div class="we-do-title color-white">Design System</div><div class="we-do-arrow-wrap"><div class="we-do-expand-icon w-embed"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.933053 8.58147C1.05028 8.4643 1.20924 8.39848 1.37499 8.39848C1.54073 8.39848 1.69969 8.4643 1.81692 8.58147L6.37498 13.1396L6.37499 0.898437C6.37499 0.732677 6.44083 0.573706 6.55804 0.456496C6.67525 0.339285 6.83422 0.273437 6.99999 0.273437C7.16575 0.273437 7.32472 0.339285 7.44193 0.456496C7.55914 0.573706 7.62499 0.732677 7.62499 0.898437L7.62498 13.1396L12.1831 8.58147C12.2411 8.52343 12.31 8.4774 12.3858 8.44599C12.4617 8.41458 12.5429 8.39842 12.625 8.39842C12.7071 8.39843 12.7884 8.4146 12.8642 8.44601C12.94 8.47742 13.0089 8.52346 13.067 8.5815C13.125 8.63955 13.171 8.70845 13.2024 8.78428C13.2338 8.86011 13.25 8.94139 13.25 9.02347C13.25 9.10554 13.2338 9.18682 13.2024 9.26265C13.171 9.33847 13.125 9.40737 13.0669 9.46541L7.44192 15.0904C7.4399 15.0924 7.43764 15.0941 7.43558 15.0961C7.42292 15.1085 7.40991 15.1204 7.39626 15.1317C7.38863 15.138 7.38054 15.1434 7.37268 15.1493C7.36421 15.1556 7.3559 15.1622 7.34708 15.1681C7.338 15.1742 7.32854 15.1795 7.3192 15.1851C7.31103 15.1899 7.30306 15.195 7.29463 15.1996C7.28525 15.2046 7.27556 15.2089 7.26598 15.2134C7.25706 15.2176 7.24828 15.222 7.23917 15.2258C7.22993 15.2296 7.22047 15.2327 7.21109 15.2361C7.20125 15.2396 7.19148 15.2434 7.18141 15.2465C7.17207 15.2493 7.16257 15.2514 7.15311 15.2538C7.14281 15.2563 7.13258 15.2592 7.12209 15.2613C7.11118 15.2635 7.10019 15.2648 7.08925 15.2663C7.08001 15.2677 7.07097 15.2694 7.06167 15.2703C7.04115 15.2723 7.02058 15.2734 6.99998 15.2734C6.97939 15.2734 6.95882 15.2723 6.9383 15.2703C6.92899 15.2694 6.91995 15.2677 6.91072 15.2663C6.89978 15.2648 6.88879 15.2635 6.87788 15.2613C6.86739 15.2592 6.85716 15.2563 6.84686 15.2538C6.8374 15.2514 6.8279 15.2493 6.81856 15.2465C6.80849 15.2434 6.79872 15.2396 6.78888 15.2361C6.77949 15.2327 6.77003 15.2296 6.7608 15.2258C6.75169 15.222 6.74291 15.2176 6.73399 15.2134C6.72441 15.2089 6.71472 15.2046 6.70534 15.1996C6.69691 15.195 6.68893 15.1899 6.68077 15.1851C6.67142 15.1795 6.66196 15.1742 6.65289 15.1681C6.64407 15.1622 6.63576 15.1556 6.62729 15.1493C6.61943 15.1434 6.61134 15.138 6.60371 15.1317C6.58979 15.1203 6.57655 15.1081 6.56366 15.0955C6.56186 15.0937 6.55984 15.0922 6.55805 15.0904L0.933053 9.46541C0.87501 9.40737 0.828969 9.33847 0.797556 9.26263C0.766143 9.1868 0.749976 9.10552 0.749976 9.02344C0.749976 8.94136 0.766143 8.86008 0.797556 8.78424C0.828969 8.70841 0.87501 8.63951 0.933053 8.58147Z" fill="white"/>
+</svg></div></div></div><div class="we-do-answer"><div class="we-do-answer-inner"><p class="we-do-paragraph mb-35">Consistency is key to a seamless user experience. Our design systems ensure uniformity across all your digital assets, saving time and resources while reinforcing your brand&#x27;s visual identity and usability.<br/></p><div class="btn-wrapper"><div data-w-id="185658de-f801-a0ed-0549-8281af64faba" class="button-hover-wrap"><div class="button-icon left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="services/design-system.html" class="primary-button-2 main-bg-color w-inline-block"><div class="button-content"><div class="button-color color-black">Explore More</div></div></a><div class="button-icon right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div></div></div></div></div></div></section></div><section data-w-id="d572d754-cdf6-d264-5e05-fef7054586f3" class="faq-s-area section-padding z-index"><div class="container"><div class="faq-item-wrap"><div class="section-title-wrap mb-140"><div class="section-title fz-120 title-animation-right">Frequently</div><div class="section-title fz-120 mr-150">Asked</div><div class="section-title fz-120 mr-300 title-animation-second-left"><span class="section-title-extra-color">Questions</span></div></div><div class="faq-item"><div class="faq-question"><h2 class="faq-title color-black">What are your focus areas as a UI/UX agency?</h2><div class="faq-arrow-wrap"><div class="faq-expand-icon w-embed"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z" fill="black"/>
+</svg></div></div></div><div class="faq-answer"><div class="faq-answer-inner"><p class="faq-paragraph">It depends on the size, scope and time duration of the project. In light of our experience as a UI UX design agency, we do not confuse our projects with overloaded workforces. More than one designer for a single project sometimes complicates the design process. In this case, we assign a lead UX designer over multiple designers to avoid unnecessary issues.<br/><br/>Unless the project consists of a complex interface, architecture and tight deadline, we normally assign a single UX designer for a single project. Considering the depth of the hurdle and the necessity, this number will rise.<br/></p></div></div></div><div class="faq-item"><div class="faq-question"><h2 class="faq-title color-black">Can your UX design agency help us with web design?</h2><div class="faq-arrow-wrap"><div class="faq-expand-icon w-embed"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z" fill="black"/>
+</svg></div></div></div><div class="faq-answer"><div class="faq-answer-inner"><p class="faq-paragraph">It depends on the size, scope and time duration of the project. In light of our experience as a UI UX design agency, we do not confuse our projects with overloaded workforces. More than one designer for a single project sometimes complicates the design process. In this case, we assign a lead UX designer over multiple designers to avoid unnecessary issues.<br/><br/>Unless the project consists of a complex interface, architecture and tight deadline, we normally assign a single UX designer for a single project. Considering the depth of the hurdle and the necessity, this number will rise.<br/></p></div></div></div><div class="faq-item"><div class="faq-question"><h2 class="faq-title color-black">What separates Musemind from other top UI/UX design agencies?</h2><div class="faq-arrow-wrap"><div class="faq-expand-icon w-embed"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z" fill="black"/>
+</svg></div></div></div><div class="faq-answer"><div class="faq-answer-inner"><p class="faq-paragraph">It depends on the size, scope and time duration of the project. In light of our experience as a UI UX design agency, we do not confuse our projects with overloaded workforces. More than one designer for a single project sometimes complicates the design process. In this case, we assign a lead UX designer over multiple designers to avoid unnecessary issues.<br/><br/>Unless the project consists of a complex interface, architecture and tight deadline, we normally assign a single UX designer for a single project. Considering the depth of the hurdle and the necessity, this number will rise.<br/></p></div></div></div><div class="faq-item"><div class="faq-question"><h2 class="faq-title color-black">How much does a UI/UX design project cost?</h2><div class="faq-arrow-wrap"><div class="faq-expand-icon w-embed"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z" fill="black"/>
+</svg></div></div></div><div class="faq-answer"><div class="faq-answer-inner"><p class="faq-paragraph">It depends on the size, scope and time duration of the project. In light of our experience as a UI UX design agency, we do not confuse our projects with overloaded workforces. More than one designer for a single project sometimes complicates the design process. In this case, we assign a lead UX designer over multiple designers to avoid unnecessary issues.<br/><br/>Unless the project consists of a complex interface, architecture and tight deadline, we normally assign a single UX designer for a single project. Considering the depth of the hurdle and the necessity, this number will rise.<br/></p></div></div></div><div class="faq-item"><div class="faq-question"><h2 class="faq-title color-black">What type of branding solution do you offer?</h2><div class="faq-arrow-wrap"><div class="faq-expand-icon w-embed"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z" fill="black"/>
+</svg></div></div></div><div class="faq-answer"><div class="faq-answer-inner"><p class="faq-paragraph">It depends on the size, scope and time duration of the project. In light of our experience as a UI UX design agency, we do not confuse our projects with overloaded workforces. More than one designer for a single project sometimes complicates the design process. In this case, we assign a lead UX designer over multiple designers to avoid unnecessary issues.<br/><br/>Unless the project consists of a complex interface, architecture and tight deadline, we normally assign a single UX designer for a single project. Considering the depth of the hurdle and the necessity, this number will rise.<br/></p></div></div></div><div class="faq-item"><div class="faq-question"><h2 class="faq-title color-black">How do you estimate the time for UI/UX project?</h2><div class="faq-arrow-wrap"><div class="faq-expand-icon w-embed"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z" fill="black"/>
+</svg></div></div></div><div class="faq-answer"><div class="faq-answer-inner"><p class="faq-paragraph">It depends on the size, scope and time duration of the project. In light of our experience as a UI UX design agency, we do not confuse our projects with overloaded workforces. More than one designer for a single project sometimes complicates the design process. In this case, we assign a lead UX designer over multiple designers to avoid unnecessary issues.<br/><br/>Unless the project consists of a complex interface, architecture and tight deadline, we normally assign a single UX designer for a single project. Considering the depth of the hurdle and the necessity, this number will rise.<br/></p></div></div></div><div class="faq-item"><div class="faq-question"><h2 class="faq-title color-black">Which locations are your work areas as a UI/UX agency?</h2><div class="faq-arrow-wrap"><div class="faq-expand-icon w-embed"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z" fill="black"/>
+</svg></div></div></div><div class="faq-answer"><div class="faq-answer-inner"><p class="faq-paragraph">It depends on the size, scope and time duration of the project. In light of our experience as a UI UX design agency, we do not confuse our projects with overloaded workforces. More than one designer for a single project sometimes complicates the design process. In this case, we assign a lead UX designer over multiple designers to avoid unnecessary issues.<br/><br/>Unless the project consists of a complex interface, architecture and tight deadline, we normally assign a single UX designer for a single project. Considering the depth of the hurdle and the necessity, this number will rise.<br/></p></div></div></div></div></div></section><div class="cat-area"><section id="world-class-area" class="our-cta bg-image service-section-padding"><div class="container"><div class="cta-inner"><div class="cta-title-wrap"><div class="cta-subtitle">Have a Cool Project idea?</div><a data-w-id="28d812cf-6300-51eb-571d-14f88be8d049" href="contact.html" class="cta-link-wrap w-inline-block"><div class="fz-64 color-white">Start by saying Hi..</div><div class="cta-border"></div><div class="cta-border-yellow"></div></a></div></div></div></section><div class="contact-form-area service-section-padding bg-gray"><div class="container"><div class="contact-grid-item"><div id="w-node-_7aabef82-22b0-2a0a-2435-506143e217fb-e572c66c"><h2 class="fz-72 color-white mb-110">Have a Project Idea?</h2></div><div class="our-contact-form-wrap w-form"><form id="email-form" name="email-form" data-name="Email Form" redirect="/thank-you" data-redirect="/thank-you" method="get" class="our-contact-form" data-wf-page-id="652bce9fb62af154c451edc0" data-wf-element-id="fa30d874-ed37-858d-c6ca-adac51fcb7af"><div class="contact-form-label">Full Name</div><input class="our-contact-form-input-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Jane Cooper" type="text" id="Name" required=""/><div class="grid-item contact-grid"><div id="w-node-fa30d874-ed37-858d-c6ca-adac51fcb7b4-e572c66c" class="grid-one"><div class="contact-form-label">Company name</div><input class="our-contact-form-input-field w-input" maxlength="256" name="Company-Name" data-name="Company Name" placeholder="Ex. Tesla Inc" type="text" id="Company-Name"/></div><div id="w-node-fa30d874-ed37-858d-c6ca-adac51fcb7b8-e572c66c" class="grid-two"><div class="contact-form-label">Email*</div><input class="our-contact-form-input-field grid-one required w-input" maxlength="256" name="Email" data-name="Email" placeholder="you@example.com" type="email" id="Email" required=""/></div></div><div class="grid-item contact-grid"><div id="w-node-fa30d874-ed37-858d-c6ca-adac51fcb7bd-e572c66c" class="grid-two"><div class="contact-form-label">Service required*</div><select id="Service-Required" name="Service-Required" data-name="Service Required" required="" class="hear-select-option w-select"><option value="None">Select Your Service</option><option value="UI/UX Design">UI/UX Design</option><option value="SaaS Design">SaaS Design</option><option value="Brand Identity">Brand Identity</option><option value="Webflow">Webflow</option><option value="Web Design">Web Design</option><option value="MVP Development">MVP Development</option><option value="Design System">Design System</option></select></div><div id="w-node-fa30d874-ed37-858d-c6ca-adac51fcb7c1-e572c66c" class="grid-one"><div class="contact-form-label">Project budget*</div><select id="Budget-Range" name="Budget-Range" data-name="Budget Range" required="" data-w-id="fa30d874-ed37-858d-c6ca-adac51fcb7c4" class="budget-select-option w-select"><option value="">Select Your Range</option><option value="$5K - $10K">$5K - $10K</option><option value="$10K - $20K">$10K - $20K</option><option value="$20K - $50K">$20K - $50K</option><option value="$50K - $100K">$50K - $100K</option><option value="$100k and up">$100k and up</option></select></div></div><div class="contact-form-label">Project details*</div><textarea id="Message" name="Message" maxlength="5000" data-name="Message" placeholder="Tell us more about your idea" required="" class="form-message-input-field w-input"></textarea><div class="btn-wrapper mobile-top-30"><div data-w-id="fa30d874-ed37-858d-c6ca-adac51fcb7c9" class="button-hover-wrap"><div class="button-icon left bg-black"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/646afb9623e968ef50e5d275_ArrowUpRight.svg" class="image-icon"/></div><input type="submit" data-wait="Please wait..." class="submit-button primary-button-2 bg-black w-button" value="Send inquiry"/><div class="button-icon right bg-black"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/646afb9623e968ef50e5d275_ArrowUpRight.svg" class="image-icon"/></div></div></div></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div><div class="bg-image position-absolute mix-blend-soft right-bottom"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/65a67cc6a52043fdbaf05e77_Contact%20Bg.png" loading="lazy" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/65a67cc6a52043fdbaf05e77_Contact%20Bg-p-500.png 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/65a67cc6a52043fdbaf05e77_Contact%20Bg.png 505w" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 500px, (max-width: 991px) 65vw, 505px"/></div></div></div><section class="footer-area"><div class="container overflow-visible"><div class="footer-columns"><div id="w-node-_4bd102f0-666b-1e2e-1ede-301c61c7fc60-06655841" class="footer-about-us"><div class="footer-contact-item mb-55"><a href="index.html" class="brand-logo-wrap mb-25 w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64e5dc5447faa4654295c505_Logo whit.svg" loading="lazy" alt="" class="logo-iimage"/></a><p class="paragraph-body color-gray-400">An Experience Design Agency focusing on building functional, simple, human-centered digital products for future.<br/></p></div><div class="btn-wrapper"><div data-w-id="4bd102f0-666b-1e2e-1ede-301c61c7fc68" class="button-hover-wrap"><div class="button-icon left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a rel="nofollow" href="contact.html" target="_blank" class="primary-button-2 main-bg-color w-inline-block"><div class="button-content"><div rel="nofollow" class="button-color color-black">Contact us now</div></div></a><div class="button-icon right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div><div id="w-node-_4bd102f0-666b-1e2e-1ede-301c61c7fc71-06655841" class="free-div"></div><div id="w-node-_4bd102f0-666b-1e2e-1ede-301c61c7fc72-06655841" class="footer-nav"><div class="footer-contact-item-title">QUICK LINK</div><ul role="list" class="footer-menu-list w-list-unstyled"><li class="footer-list-item"><a href="index.html" class="footer-nav-link">Home</a></li><li class="footer-list-item"><a rel="nofollow" href="case-study.html" class="footer-nav-link">Work</a></li><li class="footer-list-item"><a rel="nofollow" href="contact.html" class="footer-nav-link">Contact</a></li><li class="footer-list-item"><a rel="nofollow" href="career.html" class="footer-nav-link">Career</a></li><li class="footer-list-item"><a href="blog.html" class="footer-nav-link">Blog</a></li></ul></div><div id="w-node-_4bd102f0-666b-1e2e-1ede-301c61c7fc85-06655841" class="footer-nav"><div class="footer-contact-item-title">SERVICES</div><ul role="list" class="footer-menu-list w-list-unstyled"><li class="footer-list-item"><a href="services/ui-ux-design.html" class="footer-nav-link">UI/UX Design</a></li><li class="footer-list-item"><a href="services/web-design-development.html" class="footer-nav-link">Web Design</a></li><li class="footer-list-item"><a href="services/brand-identity-design.html" class="footer-nav-link">Branding</a></li><li class="footer-list-item"><a href="services/webflow-design-development.html" class="footer-nav-link">Webflow</a></li><li class="footer-list-item"><a href="services/mvp-development.html" class="footer-nav-link">MVP Development</a></li><li class="footer-list-item"><a href="services/saas-design.html" class="footer-nav-link">SaaS Design</a></li><li class="footer-list-item"><a href="services/mobile-app-design.html" class="footer-nav-link">Mobile App</a></li><li class="footer-list-item"><a href="services/design-system.html" class="footer-nav-link">Design System</a></li></ul></div></div></div><div class="partner-section"><div class="container"><div class="partner-logo-wrap"><a href="https://clutch.co/profile/musemind" target="_blank" class="brand-logo-item w-inline-block"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/659037beb047557f61fb7e30_Clutch%20logo.png" loading="lazy" alt=""/></a><a href="https://dribbble.com/musemindagency" target="_blank" class="brand-logo-item w-inline-block"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/659037be2f3b272e256005df_Dribble%20logo.png" loading="lazy" alt=""/></a><a href="https://www.goodfirms.co/company/musemind" target="_blank" class="brand-logo-item w-inline-block"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/659037be3fcec21648cdf71f_Goodfirms%20logo.png" loading="lazy" alt=""/></a><a href="https://designrush.com/agency/profile/musemind" target="_blank" class="brand-logo-item w-inline-block"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/659037beff862aa0bc792288_Design%20Rush.png" loading="lazy" alt=""/></a><a href="https://www.behance.net/musemindagency" target="_blank" class="brand-logo-item w-inline-block"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/659037be88fbae0751e81653_Behance%20logo.png" loading="lazy" alt=""/></a><a href="https://webflow.com/@musemind" target="_blank" class="brand-logo-item w-inline-block"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/659037bee6f0cbe17a5ce9dd_Webflow%20logo.png" loading="lazy" alt=""/></a></div></div></div><div class="footer-bottom-content"><div class="container"><div class="footer-bottom-inner-content"><a rel="nofollow" href="https://drive.google.com/file/d/1rg9SgNPLW3nr8MEnHqJbfwEWsWY3W-qb/view?usp=sharing" target="_blank" class="company-deck w-inline-block"><div class="download-icon"><div class="w-embed"><svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.269531" y1="15.0666" x2="12.5406" y2="15.0666" stroke="black" stroke-width="1.4"/>
+<path d="M12.4039 5.95199H11.0156C10.9367 5.95199 10.8613 5.98624 10.8082 6.04618L7.05635 10.3667L7.05635 0.723909C7.05635 0.648562 6.99465 0.586914 6.91923 0.586914H5.89086C5.81545 0.586914 5.75374 0.648562 5.75374 0.723909L5.75374 10.3667L2.00189 6.04618C1.95047 5.98624 1.87506 5.95199 1.7945 5.95199H0.4062C0.289651 5.95199 0.226235 6.0907 0.303363 6.17803L5.99198 12.7281C6.04341 12.7874 6.10698 12.8349 6.17839 12.8675C6.24981 12.9001 6.3274 12.9169 6.4059 12.9169C6.48441 12.9169 6.562 12.9001 6.63342 12.8675C6.70483 12.8349 6.7684 12.7874 6.81983 12.7281L12.5067 6.17803C12.5839 6.08899 12.5204 5.95199 12.4039 5.95199Z" fill="black"/>
+</svg></div></div><div class="deck-content"><div class="deck-title">Company Deck</div><div class="deck-size">PDF,  3 MB</div></div></a><div id="w-node-_4bd102f0-666b-1e2e-1ede-301c61c7fcbb-06655841" class="copyright-text-wrap"><div class="copyright-text">© 2023 Musemind , All Rights Reserved.</div></div><div class="footer-social-block mobile-border"><a href="https://www.facebook.com/musemind.agency" target="_blank" class="footer-social-link w-inline-block"><img src="../assets-global.website-files.com/643f7373d3f6653157617339/65903686c4c1c4b70cad24b3_facebook.png" loading="lazy" alt="" class="social-icon-image"/></a><a href="https://www.linkedin.com/company/musemind-agency/" target="_blank" class="footer-social-link w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/65903739560e9077a3b0b501_LinkedIn.svg" loading="lazy" alt="" class="social-icon-image"/></a><a href="https://www.youtube.com/channel/UCXndwkrtymFmNXxyhxLl0iw" target="_blank" class="footer-social-link w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/65903739322c326ec8255d9e_Youtube.svg" loading="lazy" alt="" class="social-icon-image"/></a><a href="https://twitter.com/musemindagency" target="_blank" class="footer-social-link w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6590373950e3623a103b9b07_Twitter.svg" loading="lazy" alt="" class="social-icon-image"/></a><a href="https://www.instagram.com/musemind.agency/" target="_blank" class="footer-social-link w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6590373a582e5f01dc6fe987_InstagramLogo.svg" loading="lazy" alt="" class="social-icon-image"/></a></div></div></div></div></section><script src="../d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c88296.js?site=643f7373d3f6653157617339" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="../assets-global.website-files.com/643f7373d3f6653157617339/js/muse-mind.ea45dcd88.js" type="text/javascript"></script><!--Smooth Scroll-->
+
+<script src="../cdn.jsdelivr.net/gh/studio-freight/lenis%400.2.28/bundled/lenis.js"></script>
+
+<script>
+	const lenis = new Lenis({
+		duration: 1.2,
+		easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+		direction: 'vertical', // vertical, horizontal
+		gestureDirection: 'vertical', // vertical, horizontal, both
+		smooth: true,
+		mouseMultiplier: 2,
+		smoothTouch: false,
+		touchMultiplier: 2,
+		infinite: false,
+	})
+
+	//get scroll value
+	lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+		console.log({ scroll, limit, velocity, direction, progress })
+	})
+
+	function raf(time) {
+		lenis.raf(time)
+		requestAnimationFrame(raf)
+	}
+
+	requestAnimationFrame(raf)
+
+</script>
+
+
+<script>
+
+  /* navigation image Chage Script start */
+  
+$(".main-menu__nav-link").hover(function () {
+		let i = $(this).parent().index();
+		$('.main-menu__img-anim').find('img').eq(i).toggleClass('active');
+	}, function () {
+		let i = $(this).parent().index();
+		$('.main-menu__img-anim').find('img').eq(i).toggleClass('active');
+	});
+  
+/* navigation image Chage Script end */
+  
+  
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = $('#navi').outerHeight();
+	$(window).scroll(function (event) {
+		didScroll = true;
+	});
+
+	setInterval(function () {
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+
+	function hasScrolled() {
+		var st = $(this).scrollTop();
+
+		// Make sure they scroll more than delta
+		if (Math.abs(lastScrollTop - st) <= delta)
+			return;
+
+		// If they scrolled down and are past the navbar, add class .nav-up.
+		// This is necessary so you never see what is "behind" the navbar.
+		if (st > lastScrollTop && st > navbarHeight) {
+			// Scroll Down
+			$('#navi').css('top', '-120px');
+		} else {
+			// Scroll Up
+			if (st + $(window).height() < $(document).height()) {
+				$('#navi').css('top', '0');
+			}
+		}
+
+		lastScrollTop = st;
+	}
+
+</script>
+
+<script>
+
+	/*-------------------------------------------
+						// service faq
+			   --------------------------------------------- */
+
+	$('.we-do-item-wrap .we-do-question').on('click', function (e) {
+		var element = $(this).parent('.we-do-item');
+		if (element.hasClass('open')) {
+			element.removeClass('open');
+			element.find('.we-do-answer').removeClass('open');
+			element.find('.we-do-answer').slideUp(300, "swing");
+		} else {
+			element.addClass('open');
+			element.children('.we-do-answer').slideDown(300, "swing");
+			element.siblings('.we-do-item').children('.we-do-answer').slideUp(300, "swing");
+			element.siblings('.we-do-item').removeClass('open');
+			element.siblings('.we-do-item').find('.we-do-question').removeClass('open');
+			element.siblings('.we-do-item').find('.we-do-answer').slideUp(300, "swing");
+		}
+	});
+  
+  	/*-------------------------------------------
+					// faq
+		   --------------------------------------------- */
+
+	$('.faq-item-wrap .faq-question').on('click', function (e) {
+		var element = $(this).parent('.faq-item');
+		if (element.hasClass('open')) {
+			element.removeClass('open');
+			element.find('.faq-answer').removeClass('open');
+			element.find('.faq-answer').toggleClass('open');
+		} else {
+			element.addClass('open');
+			element.children('.faq-answer').toggleClass('open');
+			element.siblings('.faq-item').children('.faq-answer').toggleClass('open');
+			element.siblings('.faq-item').removeClass('open');
+			element.siblings('.faq-item').find('.faq-question').removeClass('open');
+			element.siblings('.faq-item').find('.faq-answer').toggleClass('open');
+		}
+	});
+
+</script></body>
+<!-- Mirrored from musemind.agency/ui-ux-process by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Feb 2024 05:39:12 GMT -->
+</html>

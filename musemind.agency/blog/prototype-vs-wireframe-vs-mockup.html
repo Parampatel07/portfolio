@@ -1,0 +1,924 @@
+<!DOCTYPE html><!-- Last Published: Thu Feb 01 2024 12:46:57 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="musemind.agency" data-wf-page="652bce9fb62af154c451ed55" data-wf-site="643f7373d3f6653157617339" lang="en">
+<!-- Mirrored from musemind.agency/blog/prototype-vs-wireframe-vs-mockup by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Feb 2024 05:42:26 GMT -->
+<head><meta charset="utf-8"/><title>Prototype vs. Wireframe vs. Mockup – Know The Difference And When To Use Them!</title><meta content="Product teams use the terms wire frames, mock ups &amp; prototypes frequently. Each is used to illustrate concepts, collect feedback &amp; achieve consensus." name="description"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="../../assets-global.website-files.com/643f7373d3f6653157617339/css/muse-mind.2e64986fe.min.css" rel="stylesheet" type="text/css"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="../../assets-global.website-files.com/643f7373d3f6653157617339/6506ea199ef869fb79a2318a_musemind.jpg" rel="shortcut icon" type="image/x-icon"/><link href="../../assets-global.website-files.com/643f7373d3f6653157617339/6506ea022a4b20c9d19afc44_musemind.jpg" rel="apple-touch-icon"/><link href="prototype-vs-wireframe-vs-mockup.html" rel="canonical"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-FB5BVX551Q"></script><script type="text/javascript">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('set', 'developer_id.dZGVlNj', true);gtag('config', 'G-FB5BVX551Q');</script>
+<style>
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 2px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-image: linear-gradient(125deg, #000 0%, #000 100%);
+        border-radius: 10px
+    }
+
+    /* Snippet prevents all click and hover interaction with an element */
+    .clickable-off {
+        pointer-events: none;
+    }
+
+    /* Snippet enables all click and hover interaction with an element */
+    .clickable-on {
+        pointer-events: auto;
+    }
+
+    .cursor-off {
+        cursor: none;
+    }
+
+    .dropdown-toggle {
+        transition: all 300ms ease;
+    }
+
+    .dropdown-toggle.w--open .mobiel-menu-icon-wrap {
+        transform: rotate(180deg);
+    }
+
+    .dropdown-toggle.w--open {
+        background-size: 100% 100%;
+    }
+
+    .mobile-nav-link:hover {
+        background-size: 100% 100%;
+    }
+
+    .dropdown-toggle {
+        display: inline-flex;
+    }
+
+    .dropdown-toggle,
+    .mobile-nav-link {
+        background-image: linear-gradient(transparent calc(100% - 2px), #FFEB00 2px);
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position: left;
+        -webkit-transition: all 500ms ease-in-out;
+    }
+</style><link rel="canonical"
+    href="https://muse-mind.webflow.io/prototype-vs-wireframe-vs-mockup" />
+<style>
+    h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .content-wrap h2 {
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 700;
+        margin-top: 42px;
+        margin-bottom: 16px;
+    }
+
+    .content-wrap h3 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 32px;
+        margin-bottom: 12px;
+        font-weight: 700;
+    }
+
+    .content-wrap h4 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 42px;
+        margin-bottom: 16px;
+        font-weight: 700;
+    }
+
+    .content-wrap p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.7;
+        margin-bottom: 16px;
+        letter-spacing: .2px;
+        color: #313131;
+
+    }
+
+    .blog-body-content ol,
+    .blog-body-content ul {
+        margin-bottom: 30px;
+    }
+
+    .blog-body-content ol {
+        list-style: none;
+        counter-reset: my-counter;
+    }
+
+    .blog-body-content ol li {
+        counter-increment: my-counter;
+        position: relative;
+    }
+
+    .blog-body-content ul li+li {
+        margin-top: 12px;
+    }
+
+    .blog-body-content ol li+li {
+        margin-top: 12px;
+    }
+
+    .blog-body-content ol li:before {
+        content: counter(my-counter);
+        position: absolute;
+        left: -36px;
+        top: 4px;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        background-color: #02CA5F;
+        color: #000;
+    }
+
+    .blog-body-content figure {
+        margin-top: 48px;
+        margin-bottom: 45px;
+    }
+
+    .blog-body-content figcaption {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.5px;
+        color: #5F5F5D;
+
+
+    }
+
+    .blog-body-content figcaption a {
+        color: #000000;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .blog-entry-content a {
+        text-decoration: none;
+        border-bottom: 2px solid #D6DCE1;
+        transition: all 200ms ease;
+    }
+
+    .blog-entry-content a:hover {
+        border-bottom-color: #02CA5F;
+
+    }
+
+    .tocitem {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #7D7D82;
+        transition: all 200ms ease;
+        text-decoration: none;
+    }
+
+    .tocitem:hover,
+    .tocitem.active {
+        color: #02CA5F;
+        text-decoration: underline;
+    }
+
+    .blog-faq-item {
+        margin-bottom: 18px;
+        border-bottom: 1px solid rgba(31,31,30,.1);
+    padding-bottom: 18px;
+    }
+
+    .blog-faq-item.open .faq-expand-icon {
+        transform: rotate(180deg);
+    }
+
+    .blog-faq-content {
+        margin-top: 15px;
+        height: auto;
+        display: none;
+        overflow: hidden;
+        width: 90%;
+    }
+
+    .blog-faq-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .blog-faq-title h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+    .blog-faq-arrow-wrap {
+        width: 34px;
+        height: 34px;
+        background-color: #edf0f2;
+        border-radius: 100%;
+        flex: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+
+    ul.arrow-list {
+        padding-left: 0;
+    }
+
+    .arrow-list li {
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        background-image: url(https://assets-global.website-files.com/643f7373d3f6653157617339/651158fd3b1baa67e781c2fb_arrow.svg);
+        background-position: 0 2px;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        padding-left: 36px;
+    }
+
+    ul.checkmark-list {
+        padding-left: 0;
+    }
+
+    .checkmark-list li {
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        background-image: url(https://assets-global.website-files.com/643f7373d3f6653157617339/651158fdceb94c3f93da35a8_Check.svg);
+        background-position: 0 2px;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        padding-left: 36px;
+    }
+</style></head><body><div class="tag-manger w-embed"></div><div class="blog-details-responsive-embed w-embed"><style>
+  .marquee-track {
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 25s linear infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  [data-anim="roundtxt"] {
+    -webkit-animation: spin 10s linear infinite;
+    -moz-animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite;
+  }
+
+  @keyframes spin {
+    100% {
+      -moz-transform: rotate(-360deg);
+      -webkit-transform: rotate(-360deg);
+      transform: rotate(-360deg);
+    }
+  }
+
+
+  /* Snippet prevents all click and hover interaction with an element */
+  .clickable-off {
+    pointer-events: none;
+  }
+
+  /* Snippet enables all click and hover interaction with an element */
+  .clickable-on {
+    pointer-events: auto;
+  }
+
+  .cursor-off {
+    cursor: none;
+  }
+
+  .blog-single-item .blog-content .blog-title a {
+    display: inline;
+    width: calc(100%);
+    background-image: linear-gradient(transparent calc(100% - 2px), #101010 2px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    -webkit-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+  }
+
+  .blog-single-item .blog-content .blog-title:hover a {
+    background-size: 100% 100%;
+  }
+
+  .blog-.blog-table-container-container {
+    border: 1px solid #e8e7e7;
+    border-radius: 11px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 637px;
+  }
+
+  .blog-table-container {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  /* .blog-table-container-border */
+  .blog-table-container tbody tr:not(:last-child) {
+    border-bottom: 1px solid #e8e7e7;
+  }
+
+  .blog-table-container tbody tr td{
+    border-left: 1px solid #e8e7e7;
+  }
+
+  /* .blog-table-container-radious */
+  .blog-table-container tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+  }
+
+  .blog-table-container tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+  }
+
+  .blog-table-container tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+  }
+
+  .blog-table-container tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+  }
+
+  /* style tr, td, th */
+  .blog-table-container tr th {
+    font-weight: 500;
+    color: #000;
+    background-color: #edf0f2;
+  }
+
+  .blog-table-container tr td {
+    color: #606060;
+    font-weight: 400;
+  }
+
+  .blog-table-container th,
+  .blog-table-container td {
+    padding: 16px;
+  }
+
+  /* even and odd color */
+  .blog-table-container tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  .blog-table-container tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
+
+  /* media query */
+  @media only screen and (max-width: 600px) {
+    .blog-table-container {
+      overflow-x: auto;
+    }
+  }
+
+  @media only screen and (max-width: 1640px) {
+    h1 {
+      font-size: 48px;
+      line-height: 58px;
+    }
+
+    .breadcrumb-area.blog-single {
+      margin-right: 42px;
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    h1 {
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    .content-wrap h2 {
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    .content-wrap h3 {
+      font-size: 26px;
+      line-height: 34px;
+    }
+
+    .content-wrap h4 {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .section-padding {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      padding: 5px 6px;
+    }
+
+    .w-nav-brand {
+      width: 120px;
+    }
+
+    .button-color-2,
+    .button-text {
+      font-size: 14px;
+    }
+
+    .blog-featured-image-wrap.parallax-image {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    .breadcrumb-area.blog-single {
+      grid-row-gap: 60px;
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .blog-single-thumbnail {
+      width: 100%;
+    }
+
+    .blog-single-page-title {
+      max-width: 100%;
+    }
+
+  }
+
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    .menu__col.mod--center-1 {
+      left: 5vw;
+    }
+
+    .main-menu__nav-link {
+      font-size: 24px;
+    }
+
+    .main-menu__img {
+      max-width: 400px;
+    }
+
+    .section-padding {
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      padding: 5px 6px;
+    }
+
+    .w-nav-brand {
+      width: 120px;
+    }
+
+    .button-color-2,
+    .button-text {
+      font-size: 14px;
+    }
+
+    .blog-featured-image-wrap.parallax-image {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    .breadcrumb-area.blog-single {
+      grid-row-gap: 60px;
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .blog-single-thumbnail {
+      width: 100%;
+    }
+
+    .blog-single-page-title {
+      max-width: 100%;
+    }
+
+    .blog-body-content-wrapper {
+      grid-template-columns: 120px 530px auto;
+    }
+
+    .blog-entry-content {
+      margin-right: 30px;
+    }
+
+    .blog-meta-inner {
+      margin-right: 0;
+      padding: 45px 40px;
+    }
+
+    .blog-collection-list {
+      grid-column-gap: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    h1 {
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .content-wrap h2 {
+      font-size: 28px;
+      line-height: 36px;
+      margin-top: 40px;
+    }
+
+    .content-wrap h3 {
+      font-size: 22px;
+      line-height: 30px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .content-wrap h4 {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    .content-wrap p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+  }
+</style></div><div class="sidebar-wrapper"><div data-w-id="ef2b99f7-2973-4a19-6a45-b5f6283ebe6b" class="sidebar-menu-bg"></div><div class="sidebar-menu-content bg-black"><div class="container-large"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-left-container w-nav"><div class="navbar-wrapper"><a href="../index.html" class="navbar-brand w-nav-brand"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64e5dc5447faa4654295c505_Logo whit.svg" loading="lazy" alt="" class="logo-iimage"/></a><nav role="navigation" class="nav-menu-wrapper w-nav-menu"><div data-w-id="f9c2d5de-d840-add1-edf8-77004f87d3ca" class="btn-wrapper"><a href="#" class="primary-button blank w-inline-block"><div class="button-content"><div class="button-text color-white">Services</div><div class="button-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64eeb4fc5592ad025b7eb85d_short_up.svg" loading="lazy" width="12" alt=""/></div></div></a></div><ul role="list" class="nav-menu-two w-list-unstyled"><li class="menu-list-item mobile-block"><div data-hover="false" data-delay="0" class="menu-service-dropdown w-dropdown"><div class="service-list-dropdown-toggle w-dropdown-toggle"><div class="service-menu-title">Expertise</div><div class="link-list-dropdown-icon w-icon-dropdown-toggle"></div></div><nav class="menu-dropdown-list w-dropdown-list"><a href="../services/ui-ux-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">UI/UX Design</a><a href="../services/web-design-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">Web Design</a><a href="../services/mobile-app-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">Mobile App</a><a href="../services/saas-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">SaaS Design</a><a href="../services/mvp-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">MVP Build</a><a href="../services/design-system.html" class="border-bottom dropdown-link-2 w-dropdown-link">Design System</a><a href="../services/webflow-design-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">Webflow development</a><a href="../services/brand-identity-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">Branding Service </a></nav></div></li><li class="menu-list-item"><a href="../about-us.html" class="nav-link white-nav">About us</a></li><li class="menu-list-item"><a href="../case-study.html" class="nav-link white-nav">Work</a></li><li class="menu-list-item"><a href="../ui-ux-process.html" class="nav-link white-nav">Our Process</a></li><li class="menu-list-item"><a href="../career.html" class="nav-link white-nav">Career</a></li><li class="menu-list-item"><a href="../blog.html" class="nav-link white-nav">Blog</a></li><li class="menu-list-item mobile-block"><a href="#" class="nav-link">Contact</a></li></ul></nav><div class="nav-right-content"><div data-w-id="f9c2d5de-d840-add1-edf8-77004f87d3d1" class="btn-wrapper"><div data-w-id="f9c2d5de-d840-add1-edf8-77004f87d3d2" class="button-hover-wrap"><div class="button-icon-2 left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="../contact.html" class="primary-button main-bg-color w-inline-block"><div class="button-content"><div class="button-color-2">Contact us</div></div></a><div class="button-icon-2 right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div><div class="menu-button w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div><div class="menu__columns"><div class="menu__col"><div class="menu__nav-item main-menu"><a href="../services/ui-ux-design.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">UI/UX Design</div><div class="menu__nav-txt">UI/UX Design</div></div></a></div><div class="menu__nav-item main-menu"><a href="../services/web-design-development.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">Web Design</div><div class="menu__nav-txt">Web Design</div></div></a></div><div class="menu__nav-item main-menu"><a href="../services/brand-identity-design.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">Branding</div><div class="menu__nav-txt">Branding</div></div></a></div><div class="menu__nav-item main-menu"><a href="../services/webflow-design-development.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">Webflow</div><div class="menu__nav-txt">Webflow</div></div></a></div><div class="menu__nav-item main-menu"><a href="../services/mvp-development.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">MVP Development</div><div class="menu__nav-txt">MVP Development</div></div></a></div><div class="menu__nav-item main-menu"><a href="../services/saas-design.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">SaaS Design</div><div class="menu__nav-txt">SaaS Design</div></div></a></div><div class="menu__nav-item main-menu"><a href="../services/mobile-app-design.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">Mobile App</div><div class="menu__nav-txt">Mobile App</div></div></a></div><div class="menu__nav-item main-menu"><a href="../services/design-system.html" class="main-menu__nav-link w-inline-block"><div class="menu__nav-txt-wrap"><div class="menu__nav-txt mod--hover">Design System</div><div class="menu__nav-txt">Design System</div></div></a></div></div><div class="menu__col mod--center-1"><div class="menu__img-wrap overflow-visible"><div class="main-menu__img-anim main-menu"><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/652640849c6b8376d3fcfd5c_ui-ux-design-services.png" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/652640849c6b8376d3fcfd5c_ui-ux-design-services-p-500.png 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/652640849c6b8376d3fcfd5c_ui-ux-design-services.png 546w" class="main-menu__img mod--default active"/><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/64d20386f39684b3109fab25_web-design.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d20386f39684b3109fab25_web-design-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d20386f39684b3109fab25_web-design.jpg 544w" class="main-menu__img mod--hover"/><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/64d3626d34cca03f258d8696_Branding.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d3626d34cca03f258d8696_Branding-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d3626d34cca03f258d8696_Branding.jpg 544w" class="main-menu__img mod--hover"/><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/64d205c49886311dd3d026e2_webflow-menu.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d205c49886311dd3d026e2_webflow-menu-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d205c49886311dd3d026e2_webflow-menu.jpg 544w" class="main-menu__img mod--hover"/><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/64d2062fddc3026cd20861ac_mvp.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d2062fddc3026cd20861ac_mvp-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d2062fddc3026cd20861ac_mvp.jpg 544w" class="main-menu__img mod--hover"/><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/64d203889efc2204f955ed48_sass.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d203889efc2204f955ed48_sass-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d203889efc2204f955ed48_sass.jpg 544w" class="main-menu__img mod--hover"/><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/64d2079a1155224d65ad119c_mobile%20design.jpg" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/64d2079a1155224d65ad119c_mobile%20design-p-500.jpg 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/64d2079a1155224d65ad119c_mobile%20design.jpg 544w" class="main-menu__img mod--hover"/><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/65263ffad923b93fe260e47b_design-system-services.png" loading="lazy" sizes="440.99609375px" width="441" alt="" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/65263ffad923b93fe260e47b_design-system-services-p-500.png 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/65263ffad923b93fe260e47b_design-system-services.png 544w" class="main-menu__img mod--hover"/></div></div></div></div></div></div></div><section id="navi" class="navbar-logo-left"><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-left-container w-nav"><div class="container-large overflow-visible"><div class="navbar-wrapper"><a href="../index.html" class="navbar-brand w-nav-brand"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64e5dc553c8feabe9c2839ec_logo black.svg" loading="lazy" alt="" class="logo-iimage"/></a><nav role="navigation" class="nav-menu-wrapper w-nav-menu"><div data-w-id="893361cb-40f9-cce0-6d1c-57908640824b" class="btn-wrapper"><a href="#" class="primary-button blank w-inline-block"><div class="button-content"><div data-w-id="893361cb-40f9-cce0-6d1c-57908640824e" class="button-text">Services</div><div class="button-icon-block bg-white"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/644df3d379e6c4617d2e7057_menu icon.svg" loading="lazy" width="10" alt=""/></div></div></a></div><ul role="list" class="nav-menu-two w-list-unstyled"><li class="menu-list-item mobile-block"><div data-hover="false" data-delay="0" class="menu-service-dropdown w-dropdown"><div class="service-list-dropdown-toggle w-dropdown-toggle"><div class="service-menu-title">Expertise</div><div class="link-list-dropdown-icon w-icon-dropdown-toggle"></div></div><nav class="menu-dropdown-list w-dropdown-list"><a href="../services/ui-ux-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">UI/UX Design</a><a href="../services/web-design-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">Web Design</a><a href="../services/mobile-app-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">Mobile App</a><a href="../services/saas-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">SaaS Design</a><a href="../services/mvp-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">MVP Build</a><a href="../services/design-system.html" class="border-bottom dropdown-link-2 w-dropdown-link">Design System</a><a href="../services/webflow-design-development.html" class="border-bottom dropdown-link-2 w-dropdown-link">Webflow development</a><a href="../services/brand-identity-design.html" class="border-bottom dropdown-link-2 w-dropdown-link">Branding Service </a></nav></div></li><li class="menu-list-item"><a href="../about-us.html" class="nav-link">About us</a></li><li class="menu-list-item"><a href="../case-study.html" class="nav-link">Work</a></li><li class="menu-list-item"><a href="../ui-ux-process.html" class="nav-link">Our Process</a></li><li class="menu-list-item"><a href="../career.html" class="nav-link">Career</a></li><li class="menu-list-item"><a href="../blog.html" class="nav-link">Blog</a></li><li class="menu-list-item mobile-block"><a href="../contact.html" class="nav-link">Contact</a></li></ul></nav><div class="nav-right-content"><div class="btn-wrapper"><div data-w-id="28c226d6-b28c-6d7d-11a9-2b65d12c0944" class="button-hover-wrap"><div class="button-icon-2 left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="../contact.html" class="primary-button main-bg-color w-inline-block"><div class="button-content"><div class="button-color-2">Contact us</div></div></a><div class="button-icon-2 right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div><div class="menu-button w-nav-button"><div class="w-icon-nav-menu"></div></div></div></div></div><div data-collapse="all" data-animation="default" data-duration="0" data-easing="ease" data-easing2="ease" role="banner" class="mobile-menu-nav w-nav"><div class="container"><div class="mobile-main-menu-inner"><a href="../index.html" class="menu-logo-wrapper w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64e5dc553c8feabe9c2839ec_logo black.svg" loading="lazy" alt=""/></a><div data-w-id="91f365b1-47e0-bd8a-ac30-3b456c408ed5" class="mobile-nav-toggle-btn"><div class="menu-line-block"><div class="menu-line"></div><div class="menu-line two"></div></div><div class="mobile-menu-text">Menu</div></div></div></div></div><div class="mobile-popup-menu"><div class="container"><div class="mobile-nav-inner"><a href="../index.html" class="mobile-menu-logo-wrapper w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64edcc3e7c2a913505d4928d_logo.svg" loading="lazy" alt=""/></a><div data-w-id="df49dfe7-f9ef-cc86-b3f6-625eb7116310" class="mobile-nav-toggle-close-btn"><div class="mobile-menu-text">Close</div></div></div><div class="mobile-menu-content"><div class="mobile-menu-column"><div class="mobile-menu-item"><div data-hover="false" data-delay="0" class="menu-service-dropdown w-dropdown"><div class="dropdown-toggle w-dropdown-toggle"><div class="service-menu-title-2">Services</div><div class="mobiel-menu-icon-wrap main-bg-color"><div class="read-more-embed d-flex w-embed"><svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z" fill="black"/>
+</svg></div></div></div><nav class="menu-dropdown-list w-dropdown-list"><a href="../services/ui-ux-design.html" class="dropdown-link w-dropdown-link">UI/UX Design</a><a href="../services/web-design-development.html" class="dropdown-link w-dropdown-link">Web Design</a><a href="../services/mobile-app-design.html" class="dropdown-link w-dropdown-link">Mobile App</a><a href="../services/saas-design.html" class="dropdown-link w-dropdown-link">SaaS Design</a><a href="../services/design-system.html" class="dropdown-link w-dropdown-link">Design System</a><a href="../services/mvp-development.html" class="dropdown-link w-dropdown-link">MVP Service</a><a href="../services/webflow-design-development.html" class="dropdown-link w-dropdown-link">Webflow development</a><a href="../services/brand-identity-design.html" class="dropdown-link w-dropdown-link">Branding Service </a></nav></div></div><div class="mobile-menu-item"><a href="../about-us.html" class="mobile-nav-link">About us</a></div><div class="mobile-menu-item"><a href="../ui-ux-process.html" class="mobile-nav-link">Our Process</a></div><div class="mobile-menu-item"><a href="../case-study.html" class="mobile-nav-link">Work</a></div><div class="mobile-menu-item"><a href="../career.html" class="mobile-nav-link">Career</a></div><div class="mobile-menu-item mb-65"><a href="../blog.html" class="mobile-nav-link">Blog</a></div><div data-w-id="15cfa915-b069-c723-c2d6-2174aab7050a" class="btn-wrapper"><div class="button-hover-wrap"><div class="button-icon-2 left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a href="../contact.html" class="primary-button main-bg-color w-inline-block"><div class="button-content"><div class="button-color-2">Contact us</div></div></a><div class="button-icon-2 right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div></div><div class="mobile-menu-bg-block"></div></div></div><div class="w-embed"><style>
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee_item {
+  animation: scroll 10s linear infinite;
+}
+
+.marquee_wrapper:hover > .marquee_item  {
+    animation-play-state: paused;
+    
+</style></div></section><div class="blog-single-page"><div class="container-large"><div class="breadcrumb-area blog-single"><div class="breadcrumb-inner-area blog"><h1 class="blog-single-page-title">Prototype vs. Wireframe vs. Mockup – Know The Difference And When To Use Them!</h1></div><div class="blog-featured-image-wrap parallax-image"><img src="../../assets-global.website-files.com/644911ba57947a8c25ad6be7/64dc832897137169dac6b565_prototype-vs-wireframe-vs-mockup.jpg" loading="lazy" alt="" sizes="(max-width: 991px) 100vw, (max-width: 1279px) 96vw, (max-width: 1439px) 44vw, (max-width: 1919px) 40vw, 35vw" srcset="https://assets-global.website-files.com/644911ba57947a8c25ad6be7/64dc832897137169dac6b565_prototype-vs-wireframe-vs-mockup-p-500.jpg 500w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/64dc832897137169dac6b565_prototype-vs-wireframe-vs-mockup-p-800.jpg 800w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/64dc832897137169dac6b565_prototype-vs-wireframe-vs-mockup-p-1080.jpg 1080w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/64dc832897137169dac6b565_prototype-vs-wireframe-vs-mockup-p-1600.jpg 1600w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/64dc832897137169dac6b565_prototype-vs-wireframe-vs-mockup.jpg 1942w" class="blog-single-thumbnail"/></div></div></div><div class="blog-meta-info-block"><div class="container overflow-visible"><div class="blog-meta-inner"><div class="blog-meta-item"><div class="blog-meta-item-title">Post by</div><div class="blog-author-block"><img src="../../assets-global.website-files.com/644911ba57947a8c25ad6be7/650bd7b03a4c28d2cfdaecb1_nasir_uddin_museind.png" loading="lazy" alt="" class="blog-author-image"/><div class="blog-meta-item-details">Nasir Uddin</div></div></div><div class="blog-meta-item"><div class="blog-meta-item-title">Published</div><div class="blog-meta-item-details">October 15, 2023</div></div><div class="blog-meta-item"><div class="blog-meta-item-title">Catregory</div><div class="w-dyn-list"><div role="list" class="blog-category-collection-list w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="blog-meta-cat-button"><div class="blog-meta-cat-title">Design System</div></div></div></div></div></div><div class="blog-meta-item"><div class="blog-meta-item-title">Read time</div><div class="blog-meta-item-details is-read-time">5 min</div></div></div></div></div><div class="blog-body-content"><div class="container overflow-visible"><div class="blog-body-content-wrapper"><div class="blog-social-share-block"><div class="social-block"><div class="social-icon-wrap"><a data-share-facebook="true" href="#" class="social-icon share__link--facebook w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6465f8ad7849c0e8d2517a06_Facebook.svg" width="15" alt=""/></a><a data-share-twitter="true" href="#" class="social-icon share__link--twitter w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6465b9b2eeccff01cb876386_TwitterLogo.svg" width="15" data-share-twitter="true" alt=""/></a><a data-share-linkedin="true" href="#" class="social-icon share__link--linkedin w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6465b9ed18f7e6ec541397df_LinkedIn.svg" width="15" alt=""/></a><div class="social-icon"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6465f8aefdb086cb255b3fa0_InstagramLogo.svg" width="15" alt=""/></div></div></div></div><div id="content" class="blog-entry-content w-node-ef943ad3-2217-8730-ea24-acbc4abcb0ad-c451ed55"><div class="content-wrap w-richtext"><p>The digital age demands perfection, especially when it comes to digital products. That&#x27;s why every little thing matters. To achieve this, a product gets validated in three stages: wireframe, mockup, and prototype. But the catch here is that people often get confused when differentiating between a prototype, a wireframe, and a mockup.</p><p>To put it simply, these are three stages in the <a href="product-design-process.html">design process</a> that validate different aspects. </p><ol start="" role="list"><li>A prototype is a working model of the design used to test its functionalities. </li><li> A wireframe is a two-dimensional representation of the design for visualization.</li><li>A mockup is an exact replica of the design used to test the look and feel.</li></ol><p>Now, when it comes to preferring one over another, you must keep in mind that these are not alternatives to one another. Rather, these are complementary to each other in a logical hierarchy. For this reason, you need a comprehensive clarification here. </p><p>So, let’s begin…</p><h2>Prototype vs. Wireframe vs. Mockup: How They Differ?</h2><p>To know how prototypes, wireframes, and mockups differ from each other, have a look at the table below. To understand them better, you can compare them side by side.</p><div class="w-embed"><div class="blog-table-container">
+  <table class="blog-table">
+    <!-- thead -->
+    <thead class="blog-table-head">
+      <tr class="blog-table-tr">
+        <th class="blog-table-th">Aspect</th>
+        <th class="blog-table-th">Prototype</th>
+        <th class="blog-table-th">Wireframe</th>
+        <th class="blog-table-th">Mockup</th>
+      </tr>
+    </thead>
+    <!-- tbody -->
+    <tbody class="blog-table-body">
+      <tr class="blog-table-tr">
+        <td class="blog-table-td">Definition</td>
+        <td class="blog-table-td">A working model to validate design concepts/functions.</td>
+        <td class="blog-table-td">Basic visual layout outlining website/app structure.</td>
+        <td class="blog-table-td">Static, high-fidelity visual representation.</td>
+      </tr>
+      <tr class="blog-table-tr">
+        <td class="blog-table-td">Purpose</td>
+        <td class="blog-table-td">Gather feedback, test functionality, and validate decisions.</td>
+        <td class="blog-table-td">Establish basic structure/layout.</td>
+        <td class="blog-table-td">Visualize the final design, and communicate decisions.</td>
+      </tr>
+      <tr class="blog-table-tr">
+        <td class="blog-table-td">Level of Detail</td>
+        <td class="blog-table-td">Low to high-fidelity, interactive, or clickable.</td>
+        <td class="blog-table-td">Low-fidelity, structural focus, non-interactive.</td>
+        <td class="blog-table-td">High-fidelity includes visual elements.</td>
+      </tr>
+      <tr class="blog-table-tr">
+        <td class="blog-table-td">Interactivity</td>
+        <td class="blog-table-td">Interactive, the user can test and interact with the design.</td>
+        <td class="blog-table-td">Static, non-interactive, visual representation.</td>
+        <td class="blog-table-td">Static, non-interactive, showcases visual design.</td>
+      </tr>
+      <tr class="blog-table-tr">
+        <td class="blog-table-td">Feedback and Testing</td>
+        <td class="blog-table-td">User testing iteratively improves the design.</td>
+        <td class="blog-table-td">Early-stage testing, feedback on layout/structure.</td>
+        <td class="blog-table-td">Design review and feedback on visual aspects.</td>
+      </tr>
+      <tr class="blog-table-tr">
+        <td class="blog-table-td">Tools and Techniques</td>
+        <td class="blog-table-td">Digital tools, coding, and paper prototyping.</td>
+        <td class="blog-table-td">Wireframing tools, pen, and paper.</td>
+        <td class="blog-table-td">Graphic design software, high-fidelity tools.</td>
+      </tr>
+    </tbody>
+  </table>
+</div></div><p>‍</p><p>‍</p><p>Now, let’s compare these aspects in detail. </p><h2>What do you mean by wireframe?</h2><p>Wireframes are essentially the basic, black-and-white outlines that highlight the core functionality of a new product or feature. They&#x27;re like the bare bones that help you understand what the thing will do.</p><figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1030pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image"><div><img src="../../assets-global.website-files.com/644911ba57947a8c25ad6be7/64d879135f86def8cd481ad2_Prototype-vs-Wireframe-vs-Mockup.jpg" loading="lazy" alt=""/></div><figcaption>Source: mentormate.com</figcaption></figure><p>Mockups, on the other hand, take it up a notch. They&#x27;re like still, but very realistic, pictures of what the product or feature will look like and how it&#x27;ll be used. Think of them as detailed sketches that show the appearance without the working parts.</p><p>Prototypes are where things get even more real. They&#x27;re like polished versions that demonstrate exactly how a user will interact with the new product or feature. It&#x27;s about functionality and design combined, giving you a taste of how the finished thing will work and look.</p><p><strong>Purpose</strong></p><p>Prototypes, wireframes, and mockups serve specific purposes. Wireframes outline a design&#x27;s layout and structure to help you understand content placement and hierarchy. This allows you to evaluate UX and save time.</p><p>However, a mockup allows you to experiment with the visual side of the product. Consequently, you can make final decisions regarding the <a href="user-interface-color-for-perfect-design.html">product&#x27;s color schemes</a>, visual style, and typography and start high-fidelity prototyping.</p><p>On the flip side, a prototype test and validate design assumptions, refine or alter design concepts, and bridge the gap between the solution devised and user needs. By doing so, you can make informed design decisions and create products or services that are user-centered</p><p><strong>Level of Detail</strong></p><p>Wireframes, mockups, and prototypes are respectively lowest to highest in terms of level of detail. So, wireframes are like rough sketches of your idea. They&#x27;re simple and don&#x27;t have fancy stuff like colors or images. They&#x27;re all about laying out the basic structure.</p><p>Then, we have mockups. These are like the polished version of your idea. They&#x27;re more detailed and show off the visual style. You&#x27;ll see cool things like colors, images, and typography. They&#x27;re kind of like a sneak peek of what the final thing could look like.</p><p>And the top dog is the prototype. These are the most detailed. They&#x27;re interactive and feel like you&#x27;re using a real thing. They&#x27;ve got the whole package: looks, interactivity, and even a bit of user experience. But they&#x27;re not the real deal – they&#x27;re more like connected images that give you a taste of how everything will work together.</p><p><strong>Interactivity</strong></p><p>Wireframes are the least interactive, while mockups are more interactive than wireframes but less interactive than prototypes. Wireframes are like simple sketches on paper, the very basics of a design. They&#x27;re not really interactive, just a rough outline.</p><p>Now, moving up a notch, we&#x27;ve got mockups. These are a bit fancier. They&#x27;re more interactive than wireframes but not as much as the real deal. Mockups have clickable parts that give you a taste of what using the actual item would feel like.</p><p>And then, we&#x27;ve got prototypes. These come in two flavors: clickable and non-clickable. Clickable prototypes are pretty darn close to the final product in terms of interactivity. They&#x27;re like a sneak peek of the real deal.</p><p><strong>Feedback and Testing</strong></p><p>Prototypes, mockups, and wireframes play unique roles in getting feedback. Wireframes are like a skeleton, giving you a basic structure. Their feedback mostly ensures everything&#x27;s arranged well and flows smoothly.</p><p>Mockups take care of the visual side. It&#x27;s all about the look and feel, so when you get feedback on mockups, it&#x27;s about getting the aesthetics and branding right.</p><p>Prototypes are interactive models, allowing you to actually play around and see how things work. The feedback here is all about user interactions – making sure it&#x27;s user-friendly and intuitive.</p><p>When it comes to testing, wireframes and mockups, get put through the paces to see if they&#x27;re easy to use and visually appealing. Prototypes, conversely, get tested to refine the overall user experience and ensure everything functions smoothly.</p><p><strong>Tools and Techniques</strong></p><p>You can wireframe, mockup, and prototype by using the same tool. Most of the design tools do offer these options. However, these are some tools that are better for specific operations.</p><p><strong>Best tools for Wireframing: </strong></p><ol start="" role="list"><li>Figma </li><li>Adobe XD</li><li>Balsamiq</li><li>Lucidchart</li><li>UXPin</li></ol><p>You can also refer to the <a href="best-wireframing-tools-ux-designers.html">10 best wireframing tools for UX designers</a> to choose the best tool for you. </p><p><strong>Best tools for Mockups:</strong></p><ol start="" role="list"><li>Figma </li><li>Sketch </li><li>Mockflow</li><li>Proto.io</li><li>Fluid UI</li></ol><p><strong>Best tools for Prototype:</strong></p><ol start="" role="list"><li>Figma</li><li>InVision</li><li>Proto.io</li><li>Sketch</li><li>Farmer</li></ol><p>If you pick one of these tools after considering why they are best, check out the <a href="../best-ui-ux-prototyping-tools-for-designers/index.html">top 5 prototyping and design tools for UX/UI designers</a>. </p><p>As far as techniques go, wireframes use communication in a product&#x27;s structure. Mockups, conversely, showcase a product&#x27;s design, and prototypes test a product&#x27;s functionality.</p><h3>When to Use</h3><p>Wireframes are your go-to when you&#x27;re in the early stages of a design project and want to outline the <a href="https://www.smashingmagazine.com/2020/09/design-digital-product-pages/" target="_blank">basic layout and structure of a digital product</a> or webpage. </p><p>Use mockups when you need to communicate the overall look and feel to stakeholders and get a better sense of the design&#x27;s aesthetics. </p><p>Finally, when you aim to give life to your concept, that&#x27;s where prototypes come in. They&#x27;re interactive models allowing users to navigate through the design, giving you a taste of the user experience. Prototypes are perfect for testing functionality and usability and getting valuable feedback before diving into development. </p><p>Visually comparing wireframes, mockups, and prototypes is one way to quickly grasp the distinctions between these elements. You can refer to the video if you are still have confusion.</p><figure class="w-richtext-figure-type-video w-richtext-align-fullwidth" style="padding-bottom:56.206088992974244%" class="w-richtext-align-fullwidth w-richtext-figure-type-video"><div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/6cNklFhy4Ko" title="Wireframes, Mockups, Prototypes: How They Serve For Perfect Design? - All About Apps by Cleveroad"></iframe></div></figure><h2>How are Wireframe, Mock-up, And Prototype Interrelated?</h2><p>These three things together are a process. In any <a href="../index.html">UX design agency</a>, firstly, wireframes are made, then they blow life to it with designs and colors, make it a mock-up, and finally, when it’s functional, it’s a prototype.   </p><h2>In Summary, </h2><p>When it comes to <strong>prototypes vs. wireframes vs. mockups</strong>, wireframes are simple illustrations that show the functionality of a new product. Mockups are static yet realistic depictions of how a product or feature will appear and be utilized. High-fidelity prototypes demonstrate how users interact with a new product or feature. You can&#x27;t replace one with another. You need all of them when you go through a whole design process.</p><h2>Frequently Asked Questions (FAQs)</h2><p>‍</p><div class="w-embed"><!-- Accordion -->
+<div class="blog-faq-wrapper">
+  <div class="blog-faq-item">
+    <div class="blog-faq-title">
+      <h4 class="title">What Is the Difference Between a Blueprint and a Wireframe?</h4>
+      <div class="blog-faq-arrow-wrap">
+        <div class="faq-expand-icon">
+          <svg width="12" height="12" viewBox="0 0 12 16" fill="none" xmlns="http://www/.w3/.org/2000/svg">
+            <path
+              d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z"
+              fill="black"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="blog-faq-content">
+      <p> A blueprint outlines the overall page structure and functionality, while a wireframe shows the layout and
+        interactive
+        elements. Blueprints prioritize functionality over visual design, while wireframes provide more detail and are
+        used to
+        identify errors and refine the design.
+      </p>
+    </div>
+  </div>
+  <div class="blog-faq-item">
+    <div class="blog-faq-title">
+      <h4 class="title">What Are The 3 Different Components Of A Wireframe?
+</h4>
+      <div class="blog-faq-arrow-wrap">
+        <div class="faq-expand-icon">
+          <svg width="12" height="12" viewBox="0 0 12 16" fill="none" xmlns="http://www/.w3/.org/2000/svg">
+            <path
+              d="M5 8.74228e-08L5 12.17L1.41 8.59L0 10L5.29289 15.2929C5.68342 15.6834 6.31658 15.6834 6.70711 15.2929L12 10L10.59 8.59L7 12.17L7 0L5 8.74228e-08Z"
+              fill="black"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="blog-faq-content">
+      <p>Wireframes have three main components: information design, navigation design, and interface design. Information
+        design
+        organizes content and visual components to ensure a logical user experience. Navigation design focuses on the
+        structure and positioning of elements, including user flows and information architecture. Interface design
+        prioritizes
+        content, functionalities, and intended behaviors, establishing relationships between a website's various
+        templates.
+      </p>
+    </div>
+  </div>
+</div>
+<!--Home Faq Section end--></div><div class="w-embed w-script"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "What Is the Difference Between a Blueprint and a Wireframe?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "A blueprint outlines the overall page structure and functionality, while a wireframe shows the layout and interactive elements. Blueprints prioritize functionality over visual design, while wireframes provide more detail and are used to identify errors and refine the design."
+    }
+  },{
+    "@type": "Question",
+    "name": "What Are The 3 Different Components Of A Wireframe?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Wireframes have three main components: information design, navigation design, and interface design. Information design organizes content and visual components to ensure a logical user experience. Navigation design focuses on the structure and positioning of elements, including user flows and information architecture. Interface design prioritizes content, functionalities, and intended behaviors, establishing relationships between a website's various templates."
+    }
+  }]
+}
+</script></div></div></div><div id="w-node-aeb54f3f-bbbc-03fa-237b-84aca7d7e61c-c451ed55" class="toc-content-wrap"><div id="toc" class="toc-navigation content-wrap"><div class="toc-title">Table of Contents</div></div></div></div><div class="author-info-block"><div id="w-node-_15c892ea-e74f-15c3-f599-dc8c93675e73-c451ed55" class="empty-div"></div><div class="author-single-item"><div class="author-thumbnail-block"><img src="../../assets-global.website-files.com/644911ba57947a8c25ad6be7/650bd7b03a4c28d2cfdaecb1_nasir_uddin_museind.png" loading="lazy" alt="" class="author-image"/></div><div class="author-content"><div class="author-name-block"><a href="../author/nuddin.html" class="author-link-block w-inline-block"><div class="author-name">Nasir Uddin</div></a><div class="div-block"></div><div class="author-designation">CEO at Musemind</div></div><div class="author-bio">Nasir Uddin, Co-Founder and CEO at Musemind, brings over a decade of experience in dynamic UX design. With a background at prestigious companies like Panther, On Deck, Microsoft, and Motley Fool. His leadership has transformed Musemind into a trusted destination for comprehensive product design solutions.</div><div class="author-social-block"><a href="https://twitter.com/Nasiiruddin" target="_blank" class="author-social-profile w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6507e9645fec0efcb9d68911_facebook.svg" loading="lazy" alt="facebook"/></a><a href="https://twitter.com/Nasiiruddin" target="_blank" class="author-social-profile w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6465f8aefdb086cb255b3fa0_InstagramLogo.svg" loading="lazy" alt=""/></a><a href="https://twitter.com/Nasiiruddin" target="_blank" class="author-social-profile w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6465b9b2eeccff01cb876386_TwitterLogo.svg" loading="lazy" alt=""/></a><a href="#" class="author-social-profile w-inline-block w-condition-invisible"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6465b9ed18f7e6ec541397df_LinkedIn.svg" loading="lazy" alt=""/></a></div></div></div></div></div></div></div><section class="our-blog-area section-padding bg-gray"><div class="container"><div class="section-title-wrap title-bottom-minus"><div class="section-title fz-120 title-animation-right">See our</div><div class="section-title fz-120 mr-150 color-white title-animation-left">Related Blogs</div></div><div class="blog-collection-list-wrap mb-30 w-dyn-list"><div role="list" class="blog-collection-list w-dyn-items"><div role="listitem" class="blog-collection-item w-dyn-item"><div class="blog_item"><div data-w-id="12f37c8a-1353-05c2-fadc-6cae258cbb01" class="blog-single-item"><div class="blog-thumbnail-wrap"><a href="art-of-visual-branding.html" class="blog-thumbnail-block w-inline-block"><img src="../../assets-global.website-files.com/644911ba57947a8c25ad6be7/65435d4424c802a05b1c73af_the-art-of-visual-branding.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 85vw, (max-width: 991px) 45vw, (max-width: 1439px) 29vw, 400px" srcset="https://assets-global.website-files.com/644911ba57947a8c25ad6be7/65435d4424c802a05b1c73af_the-art-of-visual-branding-p-500.jpg 500w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/65435d4424c802a05b1c73af_the-art-of-visual-branding-p-800.jpg 800w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/65435d4424c802a05b1c73af_the-art-of-visual-branding-p-1080.jpg 1080w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/65435d4424c802a05b1c73af_the-art-of-visual-branding-p-1600.jpg 1600w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/65435d4424c802a05b1c73af_the-art-of-visual-branding-p-2000.jpg 2000w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/65435d4424c802a05b1c73af_the-art-of-visual-branding-p-2600.jpg 2600w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/65435d4424c802a05b1c73af_the-art-of-visual-branding.jpg 3200w" class="blog-thumbnail-image"/></a></div><div class="blog-content"><div class="blog-title mb-65"><a href="art-of-visual-branding.html" class="blog-title-block color-black">The Art of Visual Branding: How to Leverage Brand Elements to Establish Your Brand</a></div><div class="blog-reading-time-block d-flex"><div class="is-read-time w-dyn-bind-empty"></div><div class="is-read-time">Min</div></div><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="blog-category-block"><div class="blog-category color-black">Branding</div></div></div></div></div></div></div></div></div><div role="listitem" class="blog-collection-item w-dyn-item"><div class="blog_item"><div data-w-id="12f37c8a-1353-05c2-fadc-6cae258cbb01" class="blog-single-item"><div class="blog-thumbnail-wrap"><a href="why-should-give-your-design-agency-the-freedom-to-innovate.html" class="blog-thumbnail-block w-inline-block"><img src="../../assets-global.website-files.com/644911ba57947a8c25ad6be7/6530abc1205caab50f24dafb_give-your-design-agency-freedom-to-innovate.jpg" loading="lazy" alt="" sizes="(max-width: 479px) 85vw, (max-width: 991px) 45vw, (max-width: 1439px) 29vw, 400px" srcset="https://assets-global.website-files.com/644911ba57947a8c25ad6be7/6530abc1205caab50f24dafb_give-your-design-agency-freedom-to-innovate-p-500.jpg 500w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/6530abc1205caab50f24dafb_give-your-design-agency-freedom-to-innovate-p-800.jpg 800w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/6530abc1205caab50f24dafb_give-your-design-agency-freedom-to-innovate-p-1080.jpg 1080w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/6530abc1205caab50f24dafb_give-your-design-agency-freedom-to-innovate-p-1600.jpg 1600w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/6530abc1205caab50f24dafb_give-your-design-agency-freedom-to-innovate.jpg 2000w" class="blog-thumbnail-image"/></a></div><div class="blog-content"><div class="blog-title mb-65"><a href="why-should-give-your-design-agency-the-freedom-to-innovate.html" class="blog-title-block color-black">Why Should Give Your Design Agency The Freedom To Innovate?</a></div><div class="blog-reading-time-block d-flex"><div class="is-read-time">5</div><div class="is-read-time">Min</div></div><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="blog-category-block"><div class="blog-category color-black">Business</div></div></div></div></div></div></div></div></div><div role="listitem" class="blog-collection-item w-dyn-item"><div class="blog_item"><div data-w-id="12f37c8a-1353-05c2-fadc-6cae258cbb01" class="blog-single-item"><div class="blog-thumbnail-wrap"><a href="rebranding-with-purpose-embracing-growth-and-transformation.html" class="blog-thumbnail-block w-inline-block"><img src="../../assets-global.website-files.com/644911ba57947a8c25ad6be7/6524ce81e42b4fae929340b4_musmeind-rebranding.png" loading="lazy" alt="" sizes="(max-width: 479px) 85vw, (max-width: 991px) 45vw, (max-width: 1439px) 29vw, 400px" srcset="https://assets-global.website-files.com/644911ba57947a8c25ad6be7/6524ce81e42b4fae929340b4_musmeind-rebranding-p-500.png 500w, https://assets-global.website-files.com/644911ba57947a8c25ad6be7/6524ce81e42b4fae929340b4_musmeind-rebranding.png 800w" class="blog-thumbnail-image"/></a></div><div class="blog-content"><div class="blog-title mb-65"><a href="rebranding-with-purpose-embracing-growth-and-transformation.html" class="blog-title-block color-black">Rebranding with Purpose: Embracing Growth and Transformation</a></div><div class="blog-reading-time-block d-flex"><div class="is-read-time">4</div><div class="is-read-time">Min</div></div><div class="w-dyn-list"><div role="list" class="w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="blog-category-block"><div class="blog-category color-black">Branding</div></div></div></div></div></div></div></div></div></div></div></div></section><div class="w-embed w-script"><!--This is for the Table of Contents-->
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const id = entry.target.getAttribute("id");
+    if (entry.isIntersecting) {
+      document.querySelectorAll(".active").forEach((z) => {
+        z.classList.remove("active")
+      });
+      document.querySelector(`a[href="#${id}"]`).classList.add("active");
+    }
+  });
+}, { rootMargin: '0px 0px -75% 0px' });
+</script>
+<script>
+document.getElementById("content").querySelectorAll("h2").forEach(function(heading, i) { // runs a function for all h2 elements inside your rich text element
+  heading.setAttribute("id", "toc-" + i); // gives each h2 a unique id
+  observer.observe(heading);
+  let str = heading.innerHTML; // adds section titles to slugs
+  str = str.replace(/\s+/g, '-').replace(/[°&\/\\#,+()$~%.'":;*?<>{}]/g, "").toLowerCase(); // replaces spaces with hyphens, removes special characters and extra spaces from the headings, and applies lowercase in slugs
+  heading.setAttribute("id", str); // gives each heading a unique id
+  const item = document.createElement("a"); // creates an anchor element called "item" for each h2
+  item.innerHTML = heading.innerHTML // gives each item the text of the corresponding heading
+  item.setAttribute("class", "tocitem"); // gives each item the correct class
+  item.setAttribute("href", "#" + str); // gives each item the correct anchor link
+  document.querySelector("#toc").appendChild(item); // places each item inside the Table of Contents div
+});
+
+
+  </script></div><div class="cat-area"><section id="world-class-area" class="our-cta bg-image service-section-padding"><div class="container"><div class="cta-inner"><div class="cta-title-wrap"><div class="cta-subtitle">Have a Cool Project idea?</div><a data-w-id="28d812cf-6300-51eb-571d-14f88be8d049" href="../contact.html" class="cta-link-wrap w-inline-block"><div class="fz-64 color-white">Start by saying Hi..</div><div class="cta-border"></div><div class="cta-border-yellow"></div></a></div></div></div></section><div class="contact-form-area service-section-padding bg-gray"><div class="container"><div class="contact-grid-item"><div id="w-node-_7aabef82-22b0-2a0a-2435-506143e217fb-e572c66c"><h2 class="fz-72 color-white mb-110">Have a Project Idea?</h2></div><div class="our-contact-form-wrap w-form"><form id="email-form" name="email-form" data-name="Email Form" redirect="/thank-you" data-redirect="/thank-you" method="get" class="our-contact-form" data-wf-page-id="652bce9fb62af154c451ed55" data-wf-element-id="fa30d874-ed37-858d-c6ca-adac51fcb7af"><div class="contact-form-label">Full Name</div><input class="our-contact-form-input-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="Jane Cooper" type="text" id="Name" required=""/><div class="grid-item contact-grid"><div id="w-node-fa30d874-ed37-858d-c6ca-adac51fcb7b4-e572c66c" class="grid-one"><div class="contact-form-label">Company name</div><input class="our-contact-form-input-field w-input" maxlength="256" name="Company-Name" data-name="Company Name" placeholder="Ex. Tesla Inc" type="text" id="Company-Name"/></div><div id="w-node-fa30d874-ed37-858d-c6ca-adac51fcb7b8-e572c66c" class="grid-two"><div class="contact-form-label">Email*</div><input class="our-contact-form-input-field grid-one required w-input" maxlength="256" name="Email" data-name="Email" placeholder="you@example.com" type="email" id="Email" required=""/></div></div><div class="grid-item contact-grid"><div id="w-node-fa30d874-ed37-858d-c6ca-adac51fcb7bd-e572c66c" class="grid-two"><div class="contact-form-label">Service required*</div><select id="Service-Required" name="Service-Required" data-name="Service Required" required="" class="hear-select-option w-select"><option value="None">Select Your Service</option><option value="UI/UX Design">UI/UX Design</option><option value="SaaS Design">SaaS Design</option><option value="Brand Identity">Brand Identity</option><option value="Webflow">Webflow</option><option value="Web Design">Web Design</option><option value="MVP Development">MVP Development</option><option value="Design System">Design System</option></select></div><div id="w-node-fa30d874-ed37-858d-c6ca-adac51fcb7c1-e572c66c" class="grid-one"><div class="contact-form-label">Project budget*</div><select id="Budget-Range" name="Budget-Range" data-name="Budget Range" required="" data-w-id="fa30d874-ed37-858d-c6ca-adac51fcb7c4" class="budget-select-option w-select"><option value="">Select Your Range</option><option value="$5K - $10K">$5K - $10K</option><option value="$10K - $20K">$10K - $20K</option><option value="$20K - $50K">$20K - $50K</option><option value="$50K - $100K">$50K - $100K</option><option value="$100k and up">$100k and up</option></select></div></div><div class="contact-form-label">Project details*</div><textarea id="Message" name="Message" maxlength="5000" data-name="Message" placeholder="Tell us more about your idea" required="" class="form-message-input-field w-input"></textarea><div class="btn-wrapper mobile-top-30"><div data-w-id="fa30d874-ed37-858d-c6ca-adac51fcb7c9" class="button-hover-wrap"><div class="button-icon left bg-black"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/646afb9623e968ef50e5d275_ArrowUpRight.svg" class="image-icon"/></div><input type="submit" data-wait="Please wait..." class="submit-button primary-button-2 bg-black w-button" value="Send inquiry"/><div class="button-icon right bg-black"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/646afb9623e968ef50e5d275_ArrowUpRight.svg" class="image-icon"/></div></div></div></form><div class="w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div><div class="bg-image position-absolute mix-blend-soft right-bottom"><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/65a67cc6a52043fdbaf05e77_Contact%20Bg.png" loading="lazy" srcset="https://assets-global.website-files.com/643f7373d3f6653157617339/65a67cc6a52043fdbaf05e77_Contact%20Bg-p-500.png 500w, https://assets-global.website-files.com/643f7373d3f6653157617339/65a67cc6a52043fdbaf05e77_Contact%20Bg.png 505w" alt="" sizes="(max-width: 479px) 100vw, (max-width: 767px) 500px, (max-width: 991px) 65vw, 505px"/></div></div></div><section class="footer-area"><div class="container overflow-visible"><div class="footer-columns"><div id="w-node-_4bd102f0-666b-1e2e-1ede-301c61c7fc60-06655841" class="footer-about-us"><div class="footer-contact-item mb-55"><a href="../index.html" class="brand-logo-wrap mb-25 w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/64e5dc5447faa4654295c505_Logo whit.svg" loading="lazy" alt="" class="logo-iimage"/></a><p class="paragraph-body color-gray-400">An Experience Design Agency focusing on building functional, simple, human-centered digital products for future.<br/></p></div><div class="btn-wrapper"><div data-w-id="4bd102f0-666b-1e2e-1ede-301c61c7fc68" class="button-hover-wrap"><div class="button-icon left main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div><a rel="nofollow" href="../contact.html" target="_blank" class="primary-button-2 main-bg-color w-inline-block"><div class="button-content"><div rel="nofollow" class="button-color color-black">Contact us now</div></div></a><div class="button-icon right main-bg-color"><img alt="" loading="lazy" src="https://assets-global.website-files.com/643f7373d3f6653157617339/6475e07a5346abd5e16df149_short_down.svg" class="image-icon"/></div></div></div></div><div id="w-node-_4bd102f0-666b-1e2e-1ede-301c61c7fc71-06655841" class="free-div"></div><div id="w-node-_4bd102f0-666b-1e2e-1ede-301c61c7fc72-06655841" class="footer-nav"><div class="footer-contact-item-title">QUICK LINK</div><ul role="list" class="footer-menu-list w-list-unstyled"><li class="footer-list-item"><a href="../index.html" class="footer-nav-link">Home</a></li><li class="footer-list-item"><a rel="nofollow" href="../case-study.html" class="footer-nav-link">Work</a></li><li class="footer-list-item"><a rel="nofollow" href="../contact.html" class="footer-nav-link">Contact</a></li><li class="footer-list-item"><a rel="nofollow" href="../career.html" class="footer-nav-link">Career</a></li><li class="footer-list-item"><a href="../blog.html" class="footer-nav-link">Blog</a></li></ul></div><div id="w-node-_4bd102f0-666b-1e2e-1ede-301c61c7fc85-06655841" class="footer-nav"><div class="footer-contact-item-title">SERVICES</div><ul role="list" class="footer-menu-list w-list-unstyled"><li class="footer-list-item"><a href="../services/ui-ux-design.html" class="footer-nav-link">UI/UX Design</a></li><li class="footer-list-item"><a href="../services/web-design-development.html" class="footer-nav-link">Web Design</a></li><li class="footer-list-item"><a href="../services/brand-identity-design.html" class="footer-nav-link">Branding</a></li><li class="footer-list-item"><a href="../services/webflow-design-development.html" class="footer-nav-link">Webflow</a></li><li class="footer-list-item"><a href="../services/mvp-development.html" class="footer-nav-link">MVP Development</a></li><li class="footer-list-item"><a href="../services/saas-design.html" class="footer-nav-link">SaaS Design</a></li><li class="footer-list-item"><a href="../services/mobile-app-design.html" class="footer-nav-link">Mobile App</a></li><li class="footer-list-item"><a href="../services/design-system.html" class="footer-nav-link">Design System</a></li></ul></div></div></div><div class="partner-section"><div class="container"><div class="partner-logo-wrap"><a href="https://clutch.co/profile/musemind" target="_blank" class="brand-logo-item w-inline-block"><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/659037beb047557f61fb7e30_Clutch%20logo.png" loading="lazy" alt=""/></a><a href="https://dribbble.com/musemindagency" target="_blank" class="brand-logo-item w-inline-block"><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/659037be2f3b272e256005df_Dribble%20logo.png" loading="lazy" alt=""/></a><a href="https://www.goodfirms.co/company/musemind" target="_blank" class="brand-logo-item w-inline-block"><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/659037be3fcec21648cdf71f_Goodfirms%20logo.png" loading="lazy" alt=""/></a><a href="https://designrush.com/agency/profile/musemind" target="_blank" class="brand-logo-item w-inline-block"><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/659037beff862aa0bc792288_Design%20Rush.png" loading="lazy" alt=""/></a><a href="https://www.behance.net/musemindagency" target="_blank" class="brand-logo-item w-inline-block"><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/659037be88fbae0751e81653_Behance%20logo.png" loading="lazy" alt=""/></a><a href="https://webflow.com/@musemind" target="_blank" class="brand-logo-item w-inline-block"><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/659037bee6f0cbe17a5ce9dd_Webflow%20logo.png" loading="lazy" alt=""/></a></div></div></div><div class="footer-bottom-content"><div class="container"><div class="footer-bottom-inner-content"><a rel="nofollow" href="https://drive.google.com/file/d/1rg9SgNPLW3nr8MEnHqJbfwEWsWY3W-qb/view?usp=sharing" target="_blank" class="company-deck w-inline-block"><div class="download-icon"><div class="w-embed"><svg width="13" height="16" viewBox="0 0 13 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.269531" y1="15.0666" x2="12.5406" y2="15.0666" stroke="black" stroke-width="1.4"/>
+<path d="M12.4039 5.95199H11.0156C10.9367 5.95199 10.8613 5.98624 10.8082 6.04618L7.05635 10.3667L7.05635 0.723909C7.05635 0.648562 6.99465 0.586914 6.91923 0.586914H5.89086C5.81545 0.586914 5.75374 0.648562 5.75374 0.723909L5.75374 10.3667L2.00189 6.04618C1.95047 5.98624 1.87506 5.95199 1.7945 5.95199H0.4062C0.289651 5.95199 0.226235 6.0907 0.303363 6.17803L5.99198 12.7281C6.04341 12.7874 6.10698 12.8349 6.17839 12.8675C6.24981 12.9001 6.3274 12.9169 6.4059 12.9169C6.48441 12.9169 6.562 12.9001 6.63342 12.8675C6.70483 12.8349 6.7684 12.7874 6.81983 12.7281L12.5067 6.17803C12.5839 6.08899 12.5204 5.95199 12.4039 5.95199Z" fill="black"/>
+</svg></div></div><div class="deck-content"><div class="deck-title">Company Deck</div><div class="deck-size">PDF,  3 MB</div></div></a><div id="w-node-_4bd102f0-666b-1e2e-1ede-301c61c7fcbb-06655841" class="copyright-text-wrap"><div class="copyright-text">© 2023 Musemind , All Rights Reserved.</div></div><div class="footer-social-block mobile-border"><a href="https://www.facebook.com/musemind.agency" target="_blank" class="footer-social-link w-inline-block"><img src="../../assets-global.website-files.com/643f7373d3f6653157617339/65903686c4c1c4b70cad24b3_facebook.png" loading="lazy" alt="" class="social-icon-image"/></a><a href="https://www.linkedin.com/company/musemind-agency/" target="_blank" class="footer-social-link w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/65903739560e9077a3b0b501_LinkedIn.svg" loading="lazy" alt="" class="social-icon-image"/></a><a href="https://www.youtube.com/channel/UCXndwkrtymFmNXxyhxLl0iw" target="_blank" class="footer-social-link w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/65903739322c326ec8255d9e_Youtube.svg" loading="lazy" alt="" class="social-icon-image"/></a><a href="https://twitter.com/musemindagency" target="_blank" class="footer-social-link w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6590373950e3623a103b9b07_Twitter.svg" loading="lazy" alt="" class="social-icon-image"/></a><a href="https://www.instagram.com/musemind.agency/" target="_blank" class="footer-social-link w-inline-block"><img src="https://assets-global.website-files.com/643f7373d3f6653157617339/6590373a582e5f01dc6fe987_InstagramLogo.svg" loading="lazy" alt="" class="social-icon-image"/></a></div></div></div></div></section><script src="../../d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c88296.js?site=643f7373d3f6653157617339" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="../../assets-global.website-files.com/643f7373d3f6653157617339/js/muse-mind.ea45dcd88.js" type="text/javascript"></script><!--Smooth Scroll-->
+
+<script src="../../cdn.jsdelivr.net/gh/studio-freight/lenis%400.2.28/bundled/lenis.js"></script>
+
+<script>
+	const lenis = new Lenis({
+		duration: 1.2,
+		easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+		direction: 'vertical', // vertical, horizontal
+		gestureDirection: 'vertical', // vertical, horizontal, both
+		smooth: true,
+		mouseMultiplier: 2,
+		smoothTouch: false,
+		touchMultiplier: 2,
+		infinite: false,
+	})
+
+	//get scroll value
+	lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+		console.log({ scroll, limit, velocity, direction, progress })
+	})
+
+	function raf(time) {
+		lenis.raf(time)
+		requestAnimationFrame(raf)
+	}
+
+	requestAnimationFrame(raf)
+
+</script>
+
+
+<script>
+
+  /* navigation image Chage Script start */
+  
+$(".main-menu__nav-link").hover(function () {
+		let i = $(this).parent().index();
+		$('.main-menu__img-anim').find('img').eq(i).toggleClass('active');
+	}, function () {
+		let i = $(this).parent().index();
+		$('.main-menu__img-anim').find('img').eq(i).toggleClass('active');
+	});
+  
+/* navigation image Chage Script end */
+  
+  
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = $('#navi').outerHeight();
+	$(window).scroll(function (event) {
+		didScroll = true;
+	});
+
+	setInterval(function () {
+		if (didScroll) {
+			hasScrolled();
+			didScroll = false;
+		}
+	}, 250);
+
+	function hasScrolled() {
+		var st = $(this).scrollTop();
+
+		// Make sure they scroll more than delta
+		if (Math.abs(lastScrollTop - st) <= delta)
+			return;
+
+		// If they scrolled down and are past the navbar, add class .nav-up.
+		// This is necessary so you never see what is "behind" the navbar.
+		if (st > lastScrollTop && st > navbarHeight) {
+			// Scroll Down
+			$('#navi').css('top', '-120px');
+		} else {
+			// Scroll Up
+			if (st + $(window).height() < $(document).height()) {
+				$('#navi').css('top', '0');
+			}
+		}
+
+		lastScrollTop = st;
+	}
+
+</script>
+
+<script>
+
+  $(document).ready(function () {
+		let title = document.title;
+		let url = window.location.href;
+		$('[data-share-facebook').attr('href', 'https://www.facebook.com/sharer/sharer.php?u=' + url + '%2F&title=' + title + '%3F');
+		$('[data-share-facebook').attr('target', '_blank');
+
+		$('[data-share-twitter').attr('href', 'https://twitter.com/share?url=' + url + '%2F&title=' + title + '&summary=');
+		$('[data-share-twitter').attr('target', '_blank');
+
+		$('[data-share-linkedin').attr('href', 'https://www.linkedin.com/shareArticle?mini=true&url=' + url + '%2F&title=' + title + '&summary=');
+		$('[data-share-linkedin').attr('target', '_blank');
+
+		$('[data-share-whatsapp').attr('href', 'https://wa.me/?text=' + url);
+		$('[data-share-whatsapp').attr('target', '_blank');
+	});
+
+
+  const wordsPerMinute = 250;
+  const secondsPerImage = 10;
+
+  const cards = document.querySelectorAll(".blog-single-page");
+
+  for (const card of cards) {
+    const blogPostHome = card.querySelector(".blog-entry-content");
+    const words = blogPostHome.textContent.split(" ").length;
+    const images = blogPostHome.getElementsByTagName("img").length;
+
+    const totalMinutes = Math.floor((words / wordsPerMinute) + (images * secondsPerImage / 60));
+    const totalSeconds = (words / wordsPerMinute) * 60 + (images * secondsPerImage);
+
+    const readTimeDiv = card.querySelector(".is-read-time");
+
+    if (totalSeconds < 60) {
+      readTimeDiv.textContent = `1 min`;
+    } else if (totalMinutes === 1) {
+      readTimeDiv.textContent = `1 min`;
+    } else {
+      readTimeDiv.textContent = `${totalMinutes} min`;
+    }
+  }
+  
+  
+  $('.blog-faq-wrapper .blog-faq-title').on('click', function (e) {
+    var element = $(this).parent('.blog-faq-item');
+    if (element.hasClass('open')) {
+      element.removeClass('open');
+      element.find('.blog-faq-content').removeClass('open');
+      element.find('.blog-faq-content').slideUp(300, "swing");
+    } else {
+      element.addClass('open');
+      element.children('.blog-faq-content').slideDown(300, "swing");
+      element.siblings('.blog-faq-item').children('.blog-faq-content').slideUp(300, "swing");
+      element.siblings('.blog-faq-item').removeClass('open');
+      element.siblings('.blog-faq-item').find('.blog-faq-title').removeClass('open');
+      element.siblings('.blog-faq-item').find('.blog-faq-content').slideUp(300, "swing");
+    }
+  });
+
+
+</script>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://muse-mind.webflow.io/blog/prototype-vs-wireframe-vs-mockup"
+  },
+  "headline": "Prototype vs. Wireframe vs. Mockup – Know The Difference And When To Use Them!",
+  "image": "https://assets-global.website-files.com/644911ba57947a8c25ad6be7/64dc832897137169dac6b565_prototype-vs-wireframe-vs-mockup.jpg",  
+  "author": {
+    "@type": "Person",
+    "name": "Nasir Uddin",
+    "url": "nuddin",
+    "sameAs": ",https://twitter.com/Nasiiruddin"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Musemind",
+    "logo": {
+      "@type": "ImageObject",
+      "url": ""
+    }
+  },
+  "datePublished": "Oct 15, 2023",
+  "dateModified": "Oct 15, 2023"
+}
+</script></body>
+<!-- Mirrored from musemind.agency/blog/prototype-vs-wireframe-vs-mockup by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Feb 2024 05:42:27 GMT -->
+</html>

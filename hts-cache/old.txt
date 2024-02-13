@@ -1,0 +1,5 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+11:02:56	75/75	---M-Z	200	added ('OK')	text/plain	date:Sat,%2003%20Feb%202024%2005:32:55%20GMT	https://musemind.agency/robots.txt		(from )
+11:02:56	122/122	---M--	502	error ('Bad%20Gateway')	text/html	date:Sat,%2003%20Feb%202024%2005:32:56%20GMT	https://musemind.agency/	G:/httrack/port4/musemind.agency/index.html	(from )
+11:02:56	122/122	---M--	502	error ('Bad%20Gateway')	text/html	date:Sat,%2003%20Feb%202024%2005:32:56%20GMT	https://musemind.agency/	G:/httrack/port4/musemind.agency/index.html	(from )
+11:02:56	122/122	---M--	502	error ('Bad%20Gateway')	text/html	date:Sat,%2003%20Feb%202024%2005:32:56%20GMT	https://musemind.agency/	G:/httrack/port4/musemind.agency/index.html	(from )
