@@ -2505,7 +2505,8 @@ blockquote {
 .button-content {
   grid-column-gap: 4px;
   align-items: center;
-  display: flex
+  display: flex;
+  background-color: #ffff00;
 }
 
 .mb-20 {
@@ -16175,5 +16176,5 @@ blockquote {
 }
 
 .myGradient {
-  background: linear-gradient(56deg, #ffff99, #ffffff) !important ;
+  background: linear-gradient(56deg, #ffff99, #ffffff) !important;
 }
