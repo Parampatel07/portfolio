@@ -16173,3 +16173,7 @@ blockquote {
 .font-hover:hover {
   color: white;
 }
+
+.myGradient {
+  background: linear-gradient(56deg, #ffff99, #ffffff) !important;
+}
