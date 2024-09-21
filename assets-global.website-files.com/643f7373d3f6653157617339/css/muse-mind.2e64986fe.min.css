@@ -3248,7 +3248,7 @@ blockquote {
 .footer-area {
   z-index: 0;
   background-color: var(--black);
-  padding-top: 6.25vw;
+  /* padding-top: 6.25vw; */
   position: relative;
   overflow: hidden
 }
@@ -16168,4 +16168,8 @@ blockquote {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+.font-hover:hover {
+  color: white;
 }
